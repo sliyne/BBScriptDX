@@ -5,7 +5,6 @@
   "version": "0.1.0",
   "publisher": "sliyne",
   "license": "MIT",
-
   "repository": {
     "type": "git",
     "url": "https://github.com/sliyne/BBScriptDX"
@@ -341,5 +340,8 @@
         }
       }
     }
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^4.0.0"
   }
 }
