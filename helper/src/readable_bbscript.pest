@@ -1,0 +1,85 @@
+program = {
+  NEWLINE* ~ function ~ (NEWLINE+ ~ function)* ~ NEWLINE* ~ EOI
+}
+
+function = {
+  function_name ~ ":" ~ args?
+}
+
+function_name = @{
+    ident_char+
+}
+
+args = { arg ~ ("," ~ arg)* ~ ","? }
+
+arg = ${
+  "s16'" ~ string16 ~ "'"
+| "s32'" ~ string32 ~ "'"
+| "Mem(" ~ (named_var | var_id) ~ ")"
+| "Val(" ~ tagged_value ~ ")"
+| "BadTag(" ~ unknown_tag ~ "," ~ tagged_value ~ ")"
+| "(" ~ named_value ~ ")"
+| "0x" ~ raw_data
+| num
+}
+
+string16 = @{
+  string_char{, 16}
+}
+
+string32 = @{
+  string_char{, 32}
+}
+
+named_var = @{
+  ident
+}
+
+var_id = @{
+  num
+}
+
+tagged_value = @{
+  num
+}
+
+unknown_tag = @{
+  num
+}
+
+named_value = @{
+  ident
+}
+
+raw_data = @{
+  ASCII_HEX_DIGIT+
+}
+
+num = @{
+  ("-" | "+")? ~ ASCII_DIGIT+
+}
+
+ident = {
+  !NUMBER ~ ident_char+
+}
+
+ident_char = {
+  (ASCII_ALPHANUMERIC | "_" | "-" | "!" | " " | ".")
+}
+
+string_char = {
+  ( "\\'" | (!"'" ~ ANY) )
+}
+
+COMMENT = _{
+  (
+    (
+      "//" ~ (!NEWLINE ~ ANY)*
+    )
+  | (
+      "/*" ~ (!"*/" ~ ANY)* ~ "*/"
+    )
+  )
+}
+
+WHITESPACE = _{ (" " | "\t")+ }

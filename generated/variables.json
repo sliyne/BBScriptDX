@@ -1,0 +1,1298 @@
+{
+  "Tmp": {
+    "id": 0
+  },
+  "Angle": {
+    "id": 1
+  },
+  "CommonActionMark": {
+    "id": 2
+  },
+  "PlayerVal0": {
+    "id": 3
+  },
+  "PlayerVal1": {
+    "id": 4
+  },
+  "PlayerVal2": {
+    "id": 5
+  },
+  "PlayerVal3": {
+    "id": 6
+  },
+  "SpeedX": {
+    "id": 7
+  },
+  "SpeedY": {
+    "id": 8
+  },
+  "VJumpCheck": {
+    "id": 9
+  },
+  "BJumpCheck": {
+    "id": 10
+  },
+  "FJumpCheck": {
+    "id": 11
+  },
+  "EntryWait": {
+    "id": 12
+  },
+  "ActionTime": {
+    "id": 13
+  },
+  "EnemyDistanceX": {
+    "id": 14
+  },
+  "EnemyDistanceY": {
+    "id": 15
+  },
+  "BattleDoing": {
+    "id": 16
+  },
+  "PosX": {
+    "id": 17
+  },
+  "PosY": {
+    "id": 18
+  },
+  "ScriptDebug": {
+    "id": 19
+  },
+  "FrontWallDistance": {
+    "id": 20
+  },
+  "BackWallDistance": {
+    "id": 21
+  },
+  "CheckPlayerPrivatePoint0Exist": {
+    "id": 22
+  },
+  "EnemyDistance": {
+    "id": 23
+  },
+  "PlayerDamage": {
+    "id": 24
+  },
+  "ExGauge0": {
+    "id": 25
+  },
+  "ExGauge1": {
+    "id": 26
+  },
+  "ExGauge2": {
+    "id": 27
+  },
+  "ExGauge3": {
+    "id": 28
+  },
+  "ExGauge4": {
+    "id": 29
+  },
+  "IsAir": {
+    "id": 30
+  },
+  "IsLand": {
+    "id": 31
+  },
+  "Dir": {
+    "id": 32
+  },
+  "CtrlDir": {
+    "id": 33
+  },
+  "EnemyDiffX": {
+    "id": 34
+  },
+  "EnemyDiffY": {
+    "id": 35
+  },
+  "PlayerDamageOrGuard": {
+    "id": 36
+  },
+  "IsVoiceTypeA": {
+    "id": 37
+  },
+  "IsVoiceTypeB": {
+    "id": 38
+  },
+  "IsVoiceTypeC": {
+    "id": 39
+  },
+  "IsVoiceTypeD": {
+    "id": 40
+  },
+  "SkillConditionReturn": {
+    "id": 41
+  },
+  "SignalID": {
+    "id": 42
+  },
+  "SignalParam": {
+    "id": 43
+  },
+  "PlayerCenterDistance": {
+    "id": 44
+  },
+  "ActReg0": {
+    "id": 45
+  },
+  "ActReg1": {
+    "id": 46
+  },
+  "ActReg2": {
+    "id": 47
+  },
+  "ActReg3": {
+    "id": 48
+  },
+  "ActReg4": {
+    "id": 49
+  },
+  "ActReg5": {
+    "id": 50
+  },
+  "ActReg6": {
+    "id": 51
+  },
+  "ActReg7": {
+    "id": 52
+  },
+  "ObjReg0": {
+    "id": 53
+  },
+  "ObjReg1": {
+    "id": 54
+  },
+  "ObjReg2": {
+    "id": 55
+  },
+  "ObjReg3": {
+    "id": 56
+  },
+  "ObjReg4": {
+    "id": 57
+  },
+  "ObjReg5": {
+    "id": 58
+  },
+  "ObjReg6": {
+    "id": 59
+  },
+  "ObjReg7": {
+    "id": 60
+  },
+  "GTmpReg0": {
+    "id": 61
+  },
+  "GTmpReg1": {
+    "id": 62
+  },
+  "GTmpReg2": {
+    "id": 63
+  },
+  "GTmpReg3": {
+    "id": 64
+  },
+  "GTmpReg4": {
+    "id": 65
+  },
+  "GTmpReg5": {
+    "id": 66
+  },
+  "GTmpReg6": {
+    "id": 67
+  },
+  "GTmpReg7": {
+    "id": 68
+  },
+  "PgActReg0": {
+    "id": 69
+  },
+  "PgActReg1": {
+    "id": 70
+  },
+  "PgActReg2": {
+    "id": 71
+  },
+  "PgActReg3": {
+    "id": 72
+  },
+  "PgObjReg0": {
+    "id": 73
+  },
+  "PgObjReg1": {
+    "id": 74
+  },
+  "PgObjReg2": {
+    "id": 75
+  },
+  "PgObjReg3": {
+    "id": 76
+  },
+  "HitPoint": {
+    "id": 77
+  },
+  "HitPointMax": {
+    "id": 78
+  },
+  "PlayerAttackRate": {
+    "id": 79
+  },
+  "PlayerDefenceRate": {
+    "id": 80
+  },
+  "CheckStop": {
+    "id": 81
+  },
+  "PlayerCrushRate": {
+    "id": 82
+  },
+  "PosXRaw": {
+    "id": 83
+  },
+  "Boss": {
+    "id": 84
+  },
+  "LocationTest": {
+    "id": 85
+  },
+  "IsReactionReady": {
+    "id": 86
+  },
+  "ReactionWait": {
+    "id": 87
+  },
+  "ShotDamageRate": {
+    "id": 88
+  },
+  "IsRecoverableTypeA": {
+    "id": 89
+  },
+  "IsTrainingMode": {
+    "id": 90
+  },
+  "DBM_Chousei0": {
+    "id": 91
+  },
+  "IsNamaDashiSkill": {
+    "id": 92
+  },
+  "SideID": {
+    "id": 93
+  },
+  "FriendID": {
+    "id": 94
+  },
+  "IsMouthDoing": {
+    "id": 95
+  },
+  "EnemyCenterDistance": {
+    "id": 96
+  },
+  "AngleWithLink": {
+    "id": 97
+  },
+  "IsStorySpecialType": {
+    "id": 98
+  },
+  "Scale": {
+    "id": 99
+  },
+  "ScaleSpeed": {
+    "id": 100
+  },
+  "ExFaint": {
+    "id": 101
+  },
+  "ExPointFX": {
+    "id": 102
+  },
+  "ExPointFY": {
+    "id": 103
+  },
+  "EnemyFrontDistance": {
+    "id": 104
+  },
+  "OnIdlingTime": {
+    "id": 105
+  },
+  "EnemyPushDistance": {
+    "id": 106
+  },
+  "InstantKillState": {
+    "id": 107
+  },
+  "InstantKillGauge": {
+    "id": 108
+  },
+  "Tension": {
+    "id": 109
+  },
+  "EntryReady__": {
+    "id": 110
+  },
+  "MatchEnd": {
+    "id": 111
+  },
+  "HeliumTime": {
+    "id": 112
+  },
+  "BackStepInvalidTime": {
+    "id": 113
+  },
+  "ScreenTouch": {
+    "id": 114
+  },
+  "SentToObject0": {
+    "id": 115
+  },
+  "SentToObject1": {
+    "id": 116
+  },
+  "LandingStiffTimeForKy": {
+    "id": 117
+  },
+  "Adjustment0_": {
+    "id": 118
+  },
+  "BurstYomi": {
+    "id": 119
+  },
+  "BurstVal": {
+    "id": 120
+  },
+  "MOM_ItemLevel": {
+    "id": 121
+  },
+  "MOM_ItemMotion": {
+    "id": 122
+  },
+  "MatchStaticValue0": {
+    "id": 123
+  },
+  "MatchStaticValue1": {
+    "id": 124
+  },
+  "MOMEnemyNormal": {
+    "id": 125
+  },
+  "MOMEnemyBoss": {
+    "id": 126
+  },
+  "MOMEnemyBossAndBerserk": {
+    "id": 127
+  },
+  "AttackHitUniqID": {
+    "id": 128
+  },
+  "DamageHitUniqID": {
+    "id": 129
+  },
+  "IsPlayer": {
+    "id": 130
+  },
+  "LoopAnimeEnd": {
+    "id": 131
+  },
+  "FinishUIEnd": {
+    "id": 132
+  },
+  "IsEnemyFinalRound": {
+    "id": 133
+  },
+  "DebugSkillEx": {
+    "id": 134
+  },
+  "InstantKillStateTmp": {
+    "id": 135
+  },
+  "Timeup": {
+    "id": 136
+  },
+  "InstantKillAttack": {
+    "id": 137
+  },
+  "MatchResultVoice": {
+    "id": 138
+  },
+  "IsSomebodysCutScene": {
+    "id": 139
+  },
+  "IsFriendsCutScene": {
+    "id": 140
+  },
+  "IsEnemysCutScene": {
+    "id": 141
+  },
+  "IsSomebodysCutSceneOrSelfHide": {
+    "id": 142
+  },
+  "IsVoiceDoing": {
+    "id": 143
+  },
+  "Medal": {
+    "id": 144
+  },
+  "MOM_damage": {
+    "id": 145
+  },
+  "MOM_merit": {
+    "id": 146
+  },
+  "MOM_demerit": {
+    "id": 147
+  },
+  "MOM_efftime": {
+    "id": 148
+  },
+  "MOM_zentai": {
+    "id": 149
+  },
+  "MOM_hassei": {
+    "id": 150
+  },
+  "MOM_suki": {
+    "id": 151
+  },
+  "IsPinchHP": {
+    "id": 152
+  },
+  "WinActionButton": {
+    "id": 153
+  },
+  "IsCPU": {
+    "id": 154
+  },
+  "IsCPU_butRecipe": {
+    "id": 155
+  },
+  "IsEnableNormalAttack": {
+    "id": 156
+  },
+  "TrainingValue": {
+    "id": 157
+  },
+  "IsLastDamageDustAttack": {
+    "id": 158
+  },
+  "IsStylishMode": {
+    "id": 159
+  },
+  "IsStylishComboSlot": {
+    "id": 160
+  },
+  "IsStylishOneButtonInput": {
+    "id": 161
+  },
+  "BrokenCountMax": {
+    "id": 162
+  },
+  "BrokenCountCur": {
+    "id": 163
+  },
+  "BurstUltimate": {
+    "id": 164
+  },
+  "HomingDashPersuitTime": {
+    "id": 165
+  },
+  "StunTime": {
+    "id": 166
+  },
+  "TumbleTime": {
+    "id": 167
+  },
+  "EnvStylishDefence": {
+    "id": 168
+  },
+  "EnvStylishTension": {
+    "id": 169
+  },
+  "EnvStylishBurst": {
+    "id": 170
+  },
+  "EnvR02": {
+    "id": 171
+  },
+  "EnvHeartBeatingStop": {
+    "id": 172
+  },
+  "EnvHeartBeatingStopHikitsuke": {
+    "id": 173
+  },
+  "EnvHeartBeatingStopXRangeMin": {
+    "id": 174
+  },
+  "EnvHeartBeatingStopXRangeMax": {
+    "id": 175
+  },
+  "EnvHeartBeatingStopYRangeMax": {
+    "id": 176
+  },
+  "EnvHeartBeatingStopHassei": {
+    "id": 177
+  },
+  "EnvHeartBeatingStopFinishStop": {
+    "id": 178
+  },
+  "EnvR10": {
+    "id": 179
+  },
+  "EnvR11": {
+    "id": 180
+  },
+  "EnvR12": {
+    "id": 181
+  },
+  "EnvR13": {
+    "id": 182
+  },
+  "EnvR14": {
+    "id": 183
+  },
+  "EnvR15": {
+    "id": 184
+  },
+  "EnvR16": {
+    "id": 185
+  },
+  "EnvR17": {
+    "id": 186
+  },
+  "EnvR18": {
+    "id": 187
+  },
+  "EnvR19": {
+    "id": 188
+  },
+  "EnvR20": {
+    "id": 189
+  },
+  "EnvR21": {
+    "id": 190
+  },
+  "EnvR22": {
+    "id": 191
+  },
+  "EnvR23": {
+    "id": 192
+  },
+  "EnvR24": {
+    "id": 193
+  },
+  "EnvR25": {
+    "id": 194
+  },
+  "EnvR26": {
+    "id": 195
+  },
+  "EnvR27": {
+    "id": 196
+  },
+  "Dmy": {
+    "id": 197
+  },
+  "HeartBeakingStopByHeartBeatingKill": {
+    "id": 198
+  },
+  "HeartBeakingStopIgnoreTime": {
+    "id": 199
+  },
+  "ObjTimer": {
+    "id": 200
+  },
+  "PlayerVal4": {
+    "id": 201
+  },
+  "PlayerVal5": {
+    "id": 202
+  },
+  "PlayerVal6": {
+    "id": 203
+  },
+  "PlayerVal7": {
+    "id": 204
+  },
+  "AdjustmentForScript0": {
+    "id": 205
+  },
+  "AdjustmentForScript1": {
+    "id": 206
+  },
+  "AdjustmentForScript2": {
+    "id": 207
+  },
+  "AdjustmentForScript3": {
+    "id": 208
+  },
+  "NeoBlitzHitDone": {
+    "id": 209
+  },
+  "DustHomingDash2HoseiBase": {
+    "id": 210
+  },
+  "DustHomingDash2HoseiUntilBound": {
+    "id": 211
+  },
+  "IsStylishModeOrCPU": {
+    "id": 212
+  },
+  "IsNeutral": {
+    "id": 213
+  },
+  "IsEnemyDamage": {
+    "id": 214
+  },
+  "DarkCharacter": {
+    "id": 215
+  },
+  "IsLastDamageNormalThrow": {
+    "id": 216
+  },
+  "IsLastDamageOTG": {
+    "id": 217
+  },
+  "TrialTumbleNum": {
+    "id": 218
+  },
+  "TrialBossHP": {
+    "id": 219
+  },
+  "TrialBossHPMax": {
+    "id": 220
+  },
+  "TrialBossBarrier": {
+    "id": 221
+  },
+  "TrialExVal0": {
+    "id": 222
+  },
+  "TrialExVal1": {
+    "id": 223
+  },
+  "TrialExVal2": {
+    "id": 224
+  },
+  "TrialExVal3": {
+    "id": 225
+  },
+  "Alpha": {
+    "id": 226
+  },
+  "TrialBeginPopUpNum": {
+    "id": 227
+  },
+  "FaultlessDefenceDisableTime": {
+    "id": 228
+  },
+  "SlowRate": {
+    "id": 229
+  },
+  "TrialMiss": {
+    "id": 230
+  },
+  "TrialTutorialClear": {
+    "id": 231
+  },
+  "TrialTutorialHighScore": {
+    "id": 232
+  },
+  "TrialTutorialScore": {
+    "id": 233
+  },
+  "MOMSpecialValue": {
+    "id": 234
+  },
+  "AliveSubMember1": {
+    "id": 235
+  },
+  "AliveSubMember2": {
+    "id": 236
+  },
+  "AliveEnemySubMember1": {
+    "id": 237
+  },
+  "AliveEnemySubMember2": {
+    "id": 238
+  },
+  "ForceX": {
+    "id": 239
+  },
+  "ForceY": {
+    "id": 240
+  },
+  "ForceXisHigh": {
+    "id": 241
+  },
+  "ForceYisHigh": {
+    "id": 242
+  },
+  "IsWorldSideSelf": {
+    "id": 243
+  },
+  "IsWorldSideEnemy": {
+    "id": 244
+  },
+  "ChargeShotVal0": {
+    "id": 245
+  },
+  "ChargeShotVal1": {
+    "id": 246
+  },
+  "ChargeShotVal2": {
+    "id": 247
+  },
+  "ChargeShotVal3": {
+    "id": 248
+  },
+  "ARendaChain": {
+    "id": 249
+  },
+  "BRendaChain": {
+    "id": 250
+  },
+  "CRendaChain": {
+    "id": 251
+  },
+  "RemainingHomingDashCount": {
+    "id": 252
+  },
+  "CameraComboOnce": {
+    "id": 253
+  },
+  "ARendaStartType": {
+    "id": 254
+  },
+  "BRendaStartType": {
+    "id": 255
+  },
+  "CRendaStartType": {
+    "id": 256
+  },
+  "ARendaChainAir": {
+    "id": 257
+  },
+  "BRendaChainAir": {
+    "id": 258
+  },
+  "CRendaChainAir": {
+    "id": 259
+  },
+  "BodyChange": {
+    "id": 260
+  },
+  "Tokusentai": {
+    "id": 261
+  },
+  "TokusentaiReady": {
+    "id": 262
+  },
+  "IsMainPlayerSelf": {
+    "id": 263
+  },
+  "IsMainPlayerEnemy": {
+    "id": 264
+  },
+  "CameraCombo0": {
+    "id": 265
+  },
+  "CameraCombo1": {
+    "id": 266
+  },
+  "CameraCombo2": {
+    "id": 267
+  },
+  "CameraCombo3": {
+    "id": 268
+  },
+  "CameraCombo4": {
+    "id": 269
+  },
+  "CameraCombo5": {
+    "id": 270
+  },
+  "CameraCombo6": {
+    "id": 271
+  },
+  "CameraCombo7": {
+    "id": 272
+  },
+  "CameraCombo8": {
+    "id": 273
+  },
+  "CameraCombo9": {
+    "id": 274
+  },
+  "IsMainPlayerAttackedEnemy": {
+    "id": 275
+  },
+  "IsMainPlayerAttackingEnemy": {
+    "id": 276
+  },
+  "BattleResutPoseStart": {
+    "id": 277
+  },
+  "IsSparking": {
+    "id": 278
+  },
+  "AliveMemberNum": {
+    "id": 279
+  },
+  "DestructionFinishType": {
+    "id": 280
+  },
+  "PosZ": {
+    "id": 281
+  },
+  "Physique": {
+    "id": 282
+  },
+  "CameraComboOnce0": {
+    "id": 283
+  },
+  "CameraComboOnce1": {
+    "id": 284
+  },
+  "CameraComboOnce2": {
+    "id": 285
+  },
+  "CameraComboOnce3": {
+    "id": 286
+  },
+  "CameraComboOnce4": {
+    "id": 287
+  },
+  "CameraComboOnce5": {
+    "id": 288
+  },
+  "CameraComboOnce6": {
+    "id": 289
+  },
+  "CameraComboOnce7": {
+    "id": 290
+  },
+  "CameraComboOnce8": {
+    "id": 291
+  },
+  "CameraComboOnce9": {
+    "id": 292
+  },
+  "CharType": {
+    "id": 293
+  },
+  "AltInputUltimateChange": {
+    "id": 294
+  },
+  "IsSubMember1Self": {
+    "id": 295
+  },
+  "IsSubMember2Self": {
+    "id": 296
+  },
+  "IsSubObject": {
+    "id": 297
+  },
+  "IsAttackedSubObject": {
+    "id": 298
+  },
+  "IsAttackingSubObject": {
+    "id": 299
+  },
+  "DownFromSlideDown": {
+    "id": 300
+  },
+  "BlueHitPoint": {
+    "id": 301
+  },
+  "IsClone": {
+    "id": 302
+  },
+  "SwapBody": {
+    "id": 303
+  },
+  "CostumeID": {
+    "id": 304
+  },
+  "PlayerArmorHit": {
+    "id": 305
+  },
+  "WSBPoint": {
+    "id": 306
+  },
+  "WSBPattern": {
+    "id": 307
+  },
+  "WSBNextHeight": {
+    "id": 308
+  },
+  "WSBMoveDir": {
+    "id": 309
+  },
+  "IsWorldStopperOther": {
+    "id": 310
+  },
+  "Gravity": {
+    "id": 311
+  },
+  "CmnCharaReg0": {
+    "id": 312
+  },
+  "CmnCharaReg1": {
+    "id": 313
+  },
+  "CmnCharaReg2": {
+    "id": 314
+  },
+  "CmnCharaReg3": {
+    "id": 315
+  },
+  "CmnCharaReg4": {
+    "id": 316
+  },
+  "CmnCharaReg5": {
+    "id": 317
+  },
+  "CmnCharaReg6": {
+    "id": 318
+  },
+  "CmnCharaReg7": {
+    "id": 319
+  },
+  "IsFloatDmgHead": {
+    "id": 320
+  },
+  "IsFloatDmgBody": {
+    "id": 321
+  },
+  "StageSplitCount": {
+    "id": 322
+  },
+  "StageOffsetRadius": {
+    "id": 323
+  },
+  "Afro": {
+    "id": 324
+  },
+  "DmgAtkAngle": {
+    "id": 325
+  },
+  "DmgAtkAngleGuardForce": {
+    "id": 326
+  },
+  "IsFuwafuwaDown": {
+    "id": 327
+  },
+  "TensionBalance": {
+    "id": 328
+  },
+  "IsRoundTimerStop": {
+    "id": 329
+  },
+  "FuncArg0": {
+    "id": 330
+  },
+  "FuncArg1": {
+    "id": 331
+  },
+  "FuncArg2": {
+    "id": 332
+  },
+  "FuncArg3": {
+    "id": 333
+  },
+  "PlayerStance": {
+    "id": 334
+  },
+  "CmnCharaReg8": {
+    "id": 335
+  },
+  "CmnCharaReg9": {
+    "id": 336
+  },
+  "CmnCharaReg10": {
+    "id": 337
+  },
+  "CmnCharaReg11": {
+    "id": 338
+  },
+  "CmnCharaReg12": {
+    "id": 339
+  },
+  "CmnCharaReg13": {
+    "id": 340
+  },
+  "CmnCharaReg14": {
+    "id": 341
+  },
+  "CmnCharaReg15": {
+    "id": 342
+  },
+  "CmnCharaActReg0": {
+    "id": 343
+  },
+  "CmnCharaActReg1": {
+    "id": 344
+  },
+  "CmnCharaActReg2": {
+    "id": 345
+  },
+  "CmnCharaActReg3": {
+    "id": 346
+  },
+  "CmnCharaActReg4": {
+    "id": 347
+  },
+  "CmnCharaActReg5": {
+    "id": 348
+  },
+  "CmnCharaActReg6": {
+    "id": 349
+  },
+  "CmnCharaActReg7": {
+    "id": 350
+  },
+  "BlowOffLabel": {
+    "id": 351
+  },
+  "IsRISCCounterHit": {
+    "id": 352
+  },
+  "SpeedZ": {
+    "id": 353
+  },
+  "AngleX": {
+    "id": 354
+  },
+  "AngleY": {
+    "id": 355
+  },
+  "DmgFire": {
+    "id": 356
+  },
+  "DmgElectric": {
+    "id": 357
+  },
+  "DmgIce": {
+    "id": 358
+  },
+  "DamageEffectCount": {
+    "id": 359
+  },
+  "SoundActReg0": {
+    "id": 360
+  },
+  "SoundActReg1": {
+    "id": 361
+  },
+  "SoundActReg2": {
+    "id": 362
+  },
+  "SoundActReg3": {
+    "id": 363
+  },
+  "SoundObjReg0": {
+    "id": 364
+  },
+  "SoundObjReg1": {
+    "id": 365
+  },
+  "SoundObjReg2": {
+    "id": 366
+  },
+  "SoundObjReg3": {
+    "id": 367
+  },
+  "IsEnemyPlayerDown": {
+    "id": 368
+  },
+  "EnemyDmgActCount": {
+    "id": 369
+  },
+  "AtkDamage": {
+    "id": 370
+  },
+  "IsTutorialMode": {
+    "id": 371
+  },
+  "CPUVal0": {
+    "id": 372
+  },
+  "CPUVal1": {
+    "id": 373
+  },
+  "CPUVal2": {
+    "id": 374
+  },
+  "CPUVal3": {
+    "id": 375
+  },
+  "CPUVal4": {
+    "id": 376
+  },
+  "CPUVal5": {
+    "id": 377
+  },
+  "CPUVal6": {
+    "id": 378
+  },
+  "CPUVal7": {
+    "id": 379
+  },
+  "CharacterAddAttackRate": {
+    "id": 380
+  },
+  "CharacterAddDefenceRate": {
+    "id": 381
+  },
+  "TutorialPhase": {
+    "id": 382
+  },
+  "TrialReadyGo": {
+    "id": 383
+  },
+  "EXBoss": {
+    "id": 384
+  },
+  "IsEnemyWSDamageFloat": {
+    "id": 385
+  },
+  "IsDeadWSBEstimateDmg": {
+    "id": 386
+  },
+  "CmnCharaReg16": {
+    "id": 387
+  },
+  "CmnCharaReg17": {
+    "id": 388
+  },
+  "CmnCharaReg18": {
+    "id": 389
+  },
+  "CmnCharaReg19": {
+    "id": 390
+  },
+  "CmnCharaReg20": {
+    "id": 391
+  },
+  "CmnCharaReg21": {
+    "id": 392
+  },
+  "CmnCharaReg22": {
+    "id": 393
+  },
+  "CmnCharaReg23": {
+    "id": 394
+  },
+  "RoundTime": {
+    "id": 395
+  },
+  "IsEnemySlow": {
+    "id": 396
+  },
+  "BoxIndex": {
+    "id": 397
+  },
+  "ReturnValue": {
+    "id": 399
+  },
+  "AutoInputDirection": {
+    "id": 400
+  },
+  "AirTurnCheck": {
+    "id": 401
+  },
+  "DarkElectricDamage": {
+    "id": 402
+  },
+  "CmnCharaReg24": {
+    "id": 403
+  },
+  "CmnCharaReg25": {
+    "id": 404
+  },
+  "CmnCharaReg26": {
+    "id": 405
+  },
+  "CmnCharaReg27": {
+    "id": 406
+  },
+  "CmnCharaReg28": {
+    "id": 407
+  },
+  "CmnCharaReg29": {
+    "id": 408
+  },
+  "CmnCharaReg30": {
+    "id": 409
+  },
+  "CmnCharaReg31": {
+    "id": 410
+  },
+  "AngleYWithLink": {
+    "id": 411
+  },
+  "IsOriginalASK": {
+    "id": 412
+  },
+  "EnemyIsOriginalAsk": {
+    "id": 413
+  },
+  "IsCancelSkill": {
+    "id": 414
+  },
+  "DamageSystemSkill01": {
+    "id": 415
+  },
+  "FrozenDrone": {
+    "id": 416
+  },
+  "IsTo3": {
+    "id": 417
+  },
+  "To3ExecSkill": {
+    "id": 418
+  },
+  "To3ExecSkillLevel": {
+    "id": 419
+  },
+  "To3SkillGauge": {
+    "id": 420
+  },
+  "To3IsSkillCursorStop": {
+    "id": 421
+  },
+  "To3IsTurorial": {
+    "id": 422
+  },
+  "To3TutorialPhase": {
+    "id": 423
+  },
+  "To3IsDoingSkill": {
+    "id": 424
+  },
+  "To3IsDoingAssist": {
+    "id": 425
+  },
+  "To3TagInEnabled": {
+    "id": 426
+  },
+  "To3TagInRequested": {
+    "id": 427
+  },
+  "ForceWSBFlag": {
+    "id": 428
+  },
+  "To3ExecSkillsRoleBonus": {
+    "id": 429
+  },
+  "BlueElectricDamage": {
+    "id": 430
+  },
+  "Count_MAX": {
+    "id": 432
+  },
+  "PlaceHolder": {
+    "id": 433
+  }
+}

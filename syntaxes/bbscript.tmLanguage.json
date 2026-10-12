@@ -1,0 +1,117 @@
+{
+  "scopeName": "source.bbscript",
+
+  "patterns": [
+
+    {
+      "name": "keyword.control.state.bbscript",
+      "match": "\\b(beginState|beginSubroutine)\\b"
+    },
+
+    {
+      "name": "keyword.control.state.end.bbscript",
+      "match": "\\b(endState|endSubroutine)\\b"
+    },
+
+    {
+      "name": "keyword.hit.bbscript",
+      "match": "\\b(hit)\\b"
+    },
+    
+    {
+      "name": "keyword.control.block.begin.bbscript",
+      "match": "\\b(if[A-Za-z0-9_]*|else|upon|runOnObject|addMove)\\b"
+    },
+    
+    {
+      "name": "keyword.control.block.end.bbscript",
+      "match": "\\b(endIf|endElse|endUpon|endRunOnObject|endMove)\\b"
+    },
+
+    {
+      "name": "keyword.control.jump.bbscript",
+      "match": "\\b(beginLabel|endLabel|gotoLabel[A-Za-z0-9_]*|jumpToState[A-Za-z0-9_]*|jumpToState)\\b"
+    },
+
+    {
+      "name": "support.function.sprite.bbscript",
+      "match": "\\bsprite\\s*:"
+    },
+
+    {
+      "name": "support.function.variable.modify.bbscript",
+      "match": "\\b(storeValue|storeValueInObject|modifyVar|modifyVar2|modifyVarAfterOperation|modifyVarAfterOperation2|sendValuesToObject)\\s*:"
+    },
+
+    {
+      "name": "keyword.instruction.bbscript",
+      "match": "\\b[A-Za-z_][A-Za-z0-9_]*(?=\\s*:)"
+    },
+
+    {
+      "name": "support.function.mem.bbscript",
+      "begin": "\\bMem\\(",
+      "beginCaptures": {
+        "0": { "name": "support.function.mem.bbscript" }
+      },
+      "end": "\\)",
+      "endCaptures": {
+        "0": { "name": "support.function.mem.bbscript" }
+      },
+      "patterns": [
+        {
+          "include": "#numbers"
+        },
+        {
+          "name": "variable.other.bbscript",
+          "match": "[A-Za-z_][A-Za-z0-9_]*"
+        }
+      ]
+    },
+
+    {
+      "name": "support.function.val.bbscript",
+      "begin": "\\bVal\\(",
+      "beginCaptures": {
+        "0": { "name": "support.function.val.bbscript" }
+      },
+      "end": "\\)",
+      "endCaptures": {
+        "0": { "name": "support.function.val.bbscript" }
+      },
+      "patterns": [
+        {
+          "include": "#numbers"
+        }
+      ]
+    },
+
+    {
+      "name": "constant.other.s32.bbscript",
+      "match": "s32'[^']*'"
+    },
+
+    {
+      "name": "constant.language.enum.bbscript",
+      "match": "\\([A-Z0-9_]+\\)"
+    },
+
+    {
+      "name": "constant.numeric.bbscript",
+      "match": "\\b-?\\d+\\b"
+    }
+
+  ],
+
+  "repository": {
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.bbscript",
+          "match": "\\b-?\\d+\\b"
+        }
+      ]
+    }
+  }
+
+}

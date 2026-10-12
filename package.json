@@ -1,0 +1,345 @@
+{
+  "name": "bbscript-extension",
+  "displayName": "BBScriptDX",
+  "description": "BBScript language support, asset conversion workflows, and a visual COL hitbox editor.",
+  "version": "0.1.0",
+  "publisher": "sliyne",
+  "license": "MIT",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sliyne/BBScriptDX"
+  },
+  "bugs": {
+    "url": "https://github.com/sliyne/BBScriptDX/issues"
+  },
+  "homepage": "https://github.com/sliyne/BBScriptDX#readme",
+  "main": "./src/extension.js",
+  "activationEvents": [
+    "onLanguage:bbscript",
+    "onCustomEditor:bbscript.colEditor",
+    "onCommand:bbscript.openColEditor"
+  ],
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "bbscript",
+        "extensions": [
+          ".bbs"
+        ],
+        "aliases": [
+          "BBScript"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "bbscript",
+        "scopeName": "source.bbscript",
+        "path": "./syntaxes/bbscript.tmLanguage.json"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "leaveSnippet",
+        "key": "enter",
+        "when": "editorTextFocus && editorLangId == bbscript && inSnippetMode"
+      }
+    ],
+    "commands": [
+      {
+        "command": "bbscript.selectProjectFolder",
+        "title": "BBScript: Select Project Folder"
+      },
+      {
+        "command": "bbscript.setModFolder",
+        "title": "BBScript: Set Mod Folder"
+      },
+      {
+        "command": "bbscript.setSigSource",
+        "title": "BBScript: Set Sig Source"
+      },
+      {
+        "command": "bbscript.setRonOverride",
+        "title": "BBScript: Set Ron Override"
+      },
+      {
+        "command": "bbscript.useDefaultRon",
+        "title": "BBScript: Use Default Ron"
+      },
+      {
+        "command": "bbscript.debugRuntimeEnvironment",
+        "title": "BBScript: Debug Runtime Environment"
+      },
+      {
+        "command": "bbscript.debugAssetDiscovery",
+        "title": "BBScript: Debug Asset Discvery"
+      },
+      {
+        "command": "bbscript.extractParse",
+        "title": "BBScript: Extract + Parse"
+      },
+      {
+        "command": "bbscript.rebuildReinject",
+        "title": "BBScript: Rebuild + Reinject"
+      },
+      {
+        "command": "bbscript.package",
+        "title": "BBScript: Package"
+      },
+      {
+        "command": "bbscript.deploy",
+        "title": "BBScript: Deploy"
+      },
+      {
+        "command": "bbscript.rebuildPackage",
+        "title": "BBScript: Rebuild + Package"
+      },
+      {
+        "command": "bbscript.reformatFiles",
+        "title": "BBScript: Reformat Files"
+      },
+      {
+        "command": "bbscript.fullDeploy",
+        "title": "BBScript: Full Deploy"
+      },
+      {
+        "command": "bbscript.openColEditor",
+        "title": "BBScript: Open COL Editor"
+      }
+    ],
+    "customEditors": [
+      {
+        "viewType": "bbscript.colEditor",
+        "displayName": "COL Editor",
+        "selector": [
+          {
+            "filenamePattern": "**/COL_*.json"
+          }
+        ],
+        "priority": "default"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "bbscript.openColEditor",
+          "when": "resourceFilename =~ /^COL_.*\\.json$/i",
+          "group": "navigation@100"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "bbscript.openColEditor",
+          "when": "resourceFilename =~ /^COL_.*\\.json$/i",
+          "group": "navigation@100"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "bbscript",
+          "title": "BBScript",
+          "icon": "media/bbscript.svg"
+        }
+      ]
+    },
+    "views": {
+      "bbscript": [
+        {
+          "type": "webview",
+          "id": "bbscript.sidebar",
+          "name": "Workflow"
+        }
+      ]
+    },
+    "textMateRules": [
+      {
+        "scope": "keyword.control.state.bbscript",
+        "settings": {
+          "foreground": "#FF6B6B"
+        }
+      },
+      {
+        "scope": "keyword.control.state.end.bbscript",
+        "settings": {
+          "foreground": "#FF6B6B"
+        }
+      },
+      {
+        "scope": "keyword.control.flow.bbscript",
+        "settings": {
+          "foreground": "#9B5DE5"
+        }
+      },
+      {
+        "scope": "keyword.control.jump.bbscript",
+        "settings": {
+          "foreground": "#FF9E9E"
+        }
+      },
+      {
+        "scope": "support.function.sprite.bbscript",
+        "settings": {
+          "foreground": "#FFD166",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "support.function.variable.modify.bbscript",
+        "settings": {
+          "foreground": "#6BCB77"
+        }
+      },
+      {
+        "scope": "entity.name.function.bbscript",
+        "settings": {
+          "foreground": "#F4E285"
+        }
+      },
+      {
+        "scope": "constant.other.s32.bbscript",
+        "settings": {
+          "foreground": "#FFA94D"
+        }
+      },
+      {
+        "scope": "support.function.mem.bbscript",
+        "settings": {
+          "foreground": "#3A86FF",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "support.function.val.bbscript",
+        "settings": {
+          "foreground": "#56B6C2",
+          "fontStyle": "bold"
+        }
+      }
+    ],
+    "configuration": {
+      "title": "BBScript Support",
+      "properties": {
+        "bbscript.hitboxColors.hurtbox": {
+          "type": "string",
+          "format": "color-hex",
+          "default": "#36d66b",
+          "description": "COL Editor color for Hurtbox boxes."
+        },
+        "bbscript.hitboxColors.hitbox": {
+          "type": "string",
+          "format": "color-hex",
+          "default": "#ff3b4d",
+          "description": "COL Editor color for Hitbox boxes."
+        },
+        "bbscript.hitboxColors.exPoint": {
+          "type": "string",
+          "format": "color-hex",
+          "default": "#4da6ff",
+          "description": "COL Editor color for ExPoint boxes."
+        },
+        "bbscript.hitboxColors.exRect": {
+          "type": "string",
+          "format": "color-hex",
+          "default": "#c84dff",
+          "description": "COL Editor color for ExRect boxes."
+        },
+        "bbscript.hitboxColors.exVector": {
+          "type": "string",
+          "format": "color-hex",
+          "default": "#4dfff3",
+          "description": "COL Editor color for ExVector boxes."
+        },
+        "bbscript.hitboxColors.push": {
+          "type": "string",
+          "format": "color-hex",
+          "default": "#ffcc4d",
+          "description": "COL Editor color for Push boxes."
+        },
+        "bbscript.hitboxColors.tempCenter": {
+          "type": "string",
+          "format": "color-hex",
+          "default": "#ff7abf",
+          "description": "COL Editor color for TempCenter boxes."
+        },
+        "bbscript.hitboxColors.neck": {
+          "type": "string",
+          "format": "color-hex",
+          "default": "#a8ff4d",
+          "description": "COL Editor color for Neck boxes."
+        },
+        "bbscript.hitboxColors.abdominal": {
+          "type": "string",
+          "format": "color-hex",
+          "default": "#8b8bff",
+          "description": "COL Editor color for Abdominal boxes."
+        },
+        "bbscript.hitboxColors.spGuard": {
+          "type": "string",
+          "format": "color-hex",
+          "default": "#d4d4d4",
+          "description": "COL Editor color for SPGuard boxes."
+        },
+        "bbscript.hitboxColors.rLeg": {
+          "type": "string",
+          "format": "color-hex",
+          "default": "#4da6ff",
+          "description": "COL Editor color for RLeg boxes."
+        },
+        "bbscript.hitboxColors.lLeg": {
+          "type": "string",
+          "format": "color-hex",
+          "default": "#c84dff",
+          "description": "COL Editor color for LLeg boxes."
+        },
+        "bbscript.hitboxColors.private0": {
+          "type": "string",
+          "format": "color-hex",
+          "default": "#4dfff3",
+          "description": "COL Editor color for Private0 boxes."
+        },
+        "bbscript.hitboxColors.private1": {
+          "type": "string",
+          "format": "color-hex",
+          "default": "#ffcc4d",
+          "description": "COL Editor color for Private1 boxes."
+        },
+        "bbscript.hitboxColors.private2": {
+          "type": "string",
+          "format": "color-hex",
+          "default": "#ff7abf",
+          "description": "COL Editor color for Private2 boxes."
+        },
+        "bbscript.hitboxColors.private3": {
+          "type": "string",
+          "format": "color-hex",
+          "default": "#a8ff4d",
+          "description": "COL Editor color for Private3 boxes."
+        },
+        "bbscript.hitboxColors.extendJon": {
+          "type": "string",
+          "format": "color-hex",
+          "default": "#8b8bff",
+          "description": "COL Editor color for ExtendJon boxes."
+        },
+        "bbscript.hitboxColors.unknown": {
+          "type": "string",
+          "format": "color-hex",
+          "default": "#d4d4d4",
+          "description": "COL Editor color for Unknown boxes."
+        },
+        "bbscript.hitboxColors.comboHitbox": {
+          "type": "string",
+          "format": "color-hex",
+          "default": "#f5a623",
+          "description": "COL Editor color for ComboHitbox boxes."
+        }
+      }
+    }
+  }
+}

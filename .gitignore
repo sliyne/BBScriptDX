@@ -1,0 +1,41 @@
+# Node dependencies
+node_modules/
+
+# Rust build output
+helper/target/
+target/
+
+# Packaged extension output
+*.vsix
+
+# Package inspection output
+vsix-inspection/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Native build artifacts
+*.pdb
+*.ilk
+*.obj
+*.exp
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+*~
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+desktop.ini

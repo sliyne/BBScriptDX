@@ -1,0 +1,120 @@
+{
+  "editor.semanticHighlighting.enabled": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "support.function.sprite.bbscript",
+        "settings": {
+          "foreground": "#FCFC62",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "keyword.instruction.bbscript",
+        "settings": {
+          "foreground": "#FFE285"
+        }
+      },
+      {
+        "scope": "keyword.control.state.end.bbscript",
+        "settings": {
+          "foreground": "#FF6B6B"
+        }
+      },
+      {
+        "scope": "keyword.control.state.bbscript",
+        "settings": {
+          "foreground": "#FF6B6B"
+        }
+      },
+      {
+        "scope": "keyword.control.flow.bbscript",
+        "settings": {
+          "foreground": "#9B5DE5"
+        }
+      },
+      {
+        "scope": "keyword.control.jump.bbscript",
+        "settings": {
+          "foreground": "#FF9E9E"
+        }
+      },
+      {
+        "scope": "support.function.variable.modify.bbscript",
+        "settings": {
+          "foreground": "#8AEA92"
+        }
+      },
+      {
+        "scope": "entity.name.function.bbscript",
+        "settings": {
+          "foreground": "#F7DBA7"
+        }
+      },
+      {
+        "scope": "constant.other.s32.bbscript",
+        "settings": {
+          "foreground": "#FFBC42"
+        }
+      },
+      {
+        "scope": "keyword.hit.bbscript",
+        "settings": {
+          "foreground": "#FF6B6B"
+        }
+      },
+      {
+        "scope": "support.function.mem.bbscript",
+        "settings": {
+          "foreground": "#32CBFF",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "support.function.val.bbscript",
+        "settings": {
+          "foreground": "#00E8FC",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "variable.other.bbscript",
+        "settings": {
+          "foreground": "#FFEBEC",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "constant.language.enum.bbscript",
+        "settings": {
+          "foreground": "#FF9000"
+        }
+      },
+      {
+        "scope": "constant.numeric.bbscript",
+        "settings": {
+          "foreground": "#E9FFF9"
+        }
+      }
+    ]
+  },
+  "bbscript.hitboxColors.hurtbox": "#36d66b",
+  "bbscript.hitboxColors.hitbox": "#ff3b4d",
+  "bbscript.hitboxColors.exPoint": "#4da6ff",
+  "bbscript.hitboxColors.exRect": "#c84dff",
+  "bbscript.hitboxColors.exVector": "#4dfff3",
+  "bbscript.hitboxColors.push": "#ffcc4d",
+  "bbscript.hitboxColors.tempCenter": "#ff7abf",
+  "bbscript.hitboxColors.neck": "#a8ff4d",
+  "bbscript.hitboxColors.abdominal": "#8b8bff",
+  "bbscript.hitboxColors.spGuard": "#d4d4d4",
+  "bbscript.hitboxColors.rLeg": "#4da6ff",
+  "bbscript.hitboxColors.lLeg": "#c84dff",
+  "bbscript.hitboxColors.private0": "#4dfff3",
+  "bbscript.hitboxColors.private1": "#ffcc4d",
+  "bbscript.hitboxColors.private2": "#ff7abf",
+  "bbscript.hitboxColors.private3": "#a8ff4d",
+  "bbscript.hitboxColors.extendJon": "#8b8bff",
+  "bbscript.hitboxColors.unknown": "#d4d4d4",
+  "bbscript.hitboxColors.comboHitbox": "#f5a623"
+}

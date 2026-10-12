@@ -1,0 +1,7862 @@
+{
+  "0": {
+    "name": "beginState",
+    "desc": "Begins an action (ANV start).\nSpecify the action name here.\nMust be paired with ActionEnd()."
+  },
+  "1": {
+    "name": "endState",
+    "desc": "Ends the action."
+  },
+  "2": {
+    "name": "sprite",
+    "desc": "Begins a sprite/cell block.\nSpecifies the sprite/animation and duration (frames).\nCommands inside execute during this time."
+  },
+  "3": {
+    "name": "endLabel",
+    "desc": "Ends the current sprite/cell block."
+  },
+  "4": {
+    "name": "if",
+    "desc": "Begins an IF condition block."
+  },
+  "5": {
+    "name": "endIf",
+    "desc": "Ends the IF condition block."
+  },
+  "6": {
+    "name": "ifOperation",
+    "desc": "Begins an IF condition using an OP2 comparison.\nStores result in a temporary variable."
+  },
+  "7": {
+    "name": "ifNot",
+    "desc": "Begins an IF condition with NOT logic."
+  },
+  "8": {
+    "name": "ifOpponentCharacter",
+    "desc": "Conditional branch based on enemy character name."
+  },
+  "9": {
+    "name": "else",
+    "desc": "Begins an ELSE block."
+  },
+  "10": {
+    "name": "endElse",
+    "desc": "Ends the ELSE block."
+  },
+  "11": {
+    "name": "beginLabel",
+    "desc": "Defines a label used as a jump destination."
+  },
+  "12": {
+    "name": "gotoLabel",
+    "desc": "Jumps to the specified label."
+  },
+  "13": {
+    "name": "gotoIfOperation",
+    "desc": "Conditional jump using an OP2 comparison."
+  },
+  "14": {
+    "name": "gotoLabelRequests",
+    "desc": "Queued/reserved Goto that executes after the current processing block."
+  },
+  "15": {
+    "name": "beginSubroutine",
+    "desc": "Begins a function/subroutine definition.\nMust be paired with FuncEnd()."
+  },
+  "16": {
+    "name": "endSubroutine",
+    "desc": "Ends the subroutine."
+  },
+  "17": {
+    "name": "callSubroutine",
+    "desc": "Calls a defined subroutine."
+  },
+  "18": {
+    "name": "exitState",
+    "desc": "Requests termination of the current action.\nSimilar to ActionEnd but deferred."
+  },
+  "19": {
+    "name": "deactivateObjectById",
+    "desc": "Deletes/deactivates an object by type."
+  },
+  "20": {
+    "name": "deactivateCurrentObject",
+    "desc": "Deletes the current object itself."
+  },
+  "21": {
+    "name": "upon",
+    "desc": "Begins an interrupt/event definition block."
+  },
+  "22": {
+    "name": "endUpon",
+    "desc": "Ends the interrupt block."
+  },
+  "23": {
+    "name": "clearRegisteredUponCode",
+    "desc": "Clears a registered interrupt."
+  },
+  "24": {
+    "name": "gotoLabelIf",
+    "desc": "Conditional jump if operand evaluates true."
+  },
+  "25": {
+    "name": "gotoLabelIfNot",
+    "desc": "Conditional jump if operand evaluates false."
+  },
+  "26": {
+    "name": "setSpriteTime",
+    "desc": "Overrides the duration of the current sprite/cell."
+  },
+  "27": {
+    "name": "jumpToState",
+    "desc": "Requests a transition to another action/state.\nMay not occur immediately."
+  },
+  "28": {
+    "name": "jumpToStateIfNotSame",
+    "desc": "Requests a state change only if different from the current state."
+  },
+  "29": {
+    "name": "jumpToStateIfNot",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "30": {
+    "name": "ifPlayerCharacter",
+    "desc": "Conditional branch based on player character name."
+  },
+  "31": {
+    "name": "gotoForLoop",
+    "desc": "Used to form loop-like control flow using conditional branching."
+  },
+  "32": {
+    "name": "deactivateObjectByName",
+    "desc": "Deletes objects associated with a given action name."
+  },
+  "33": {
+    "name": "findState",
+    "desc": "Searches for objects with a specific action.\nSets a temp variable true if found."
+  },
+  "34": {
+    "name": "interruptAction",
+    "desc": "Triggers an action via an interrupt."
+  },
+  "35": {
+    "name": "gotoLabelUpon",
+    "desc": "Performs a Goto triggered by an interrupt."
+  },
+  "36": {
+    "name": "setEventTrigger",
+    "desc": "Sets parameter 0 for an interrupt."
+  },
+  "37": {
+    "name": "setEventTrigger2",
+    "desc": "Sets parameter 1 for an interrupt."
+  },
+  "38": {
+    "name": "deactivateObjectByNameExceptSelf",
+    "desc": "Deletes all matching objects except the current one."
+  },
+  "39": {
+    "name": "ifOnFrame",
+    "desc": "Frame-based conditional branching.\nEquivalent to checking current frame timing."
+  },
+  "40": {
+    "name": "endRunOnObject",
+    "desc": "Ends a block controlling another object."
+  },
+  "41": {
+    "name": "runOnObject",
+    "desc": "Begins control of another object.\nUsed to apply operations to that object."
+  },
+  "42": {
+    "name": "stackObjectEx",
+    "desc": "Advanced stack-based object control."
+  },
+  "43": {
+    "name": "stackObject",
+    "desc": "Pushes an object onto a control stack."
+  },
+  "44": {
+    "name": "operation1",
+    "desc": "Performs a unary operation.\nResult stored in a temporary variable."
+  },
+  "45": {
+    "name": "modifyVar2",
+    "desc": "Performs a binary operation.\nResult stored in a temporary variable."
+  },
+  "46": {
+    "name": "storeValue",
+    "desc": "Copies a value from one operand to another."
+  },
+  "47": {
+    "name": "ifOpponentCharacterMain",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "48": {
+    "name": "checkInput",
+    "desc": "Checks player input.\nResult stored in a temporary variable."
+  },
+  "49": {
+    "name": "checkMoveFlag",
+    "desc": "Checks a condition flag.\nResult stored in a temporary variable."
+  },
+  "50": {
+    "name": "calcRound",
+    "desc": "Clamps a value within a given range.\nResult stored in a temporary variable."
+  },
+  "51": {
+    "name": "isObjectActive",
+    "desc": "Checks whether a specified object is active.\nResult stored in a temporary variable."
+  },
+  "52": {
+    "name": "modifyVarAfterOperation",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "53": {
+    "name": "storeValueFromObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "54": {
+    "name": "modifyVar",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "55": {
+    "name": "checkIfObjectStopped",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "56": {
+    "name": "pauseSprite",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "57": {
+    "name": "setObjectPriority",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "58": {
+    "name": "worldOutToEliminate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "59": {
+    "name": "getTrainingItemVal",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "60": {
+    "name": "calcDistance",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "61": {
+    "name": "checkEnemyNameNotBoss",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "62": {
+    "name": "posTypeToVar",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "63": {
+    "name": "checkTeamMemberName",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "64": {
+    "name": "checkTeamMemberAlive",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "65": {
+    "name": "checkEnemyTeamMemberName",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "66": {
+    "name": "checkEnemyTeamMemberAlive",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "67": {
+    "name": "checkEnemyPhysique",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "68": {
+    "name": "ifPlayerAlive",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "69": {
+    "name": "ifEnemyPlayerAlive",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "70": {
+    "name": "deactivateObjectByNameAll",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "71": {
+    "name": "removeStackObjectSelf",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "72": {
+    "name": "checkTeamMember",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "73": {
+    "name": "checkEnemyCharacterAttributeType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "74": {
+    "name": "ifGameMode",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "75": {
+    "name": "callSubroutineWithArgs",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "76": {
+    "name": "jumpToStateKeepDamage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "77": {
+    "name": "preSubroutineBegin",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "78": {
+    "name": "postSubroutineBegin",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "79": {
+    "name": "returnValue",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "92": {
+    "name": "setPositionX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "93": {
+    "name": "setRawPositionX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "94": {
+    "name": "addPositionX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "95": {
+    "name": "addRawPositionX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "96": {
+    "name": "pushPositionX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "97": {
+    "name": "popPositionX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "98": {
+    "name": "setPositionY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "99": {
+    "name": "addPositionY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "100": {
+    "name": "pushPositionY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "101": {
+    "name": "popPositionY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "102": {
+    "name": "randomAddPositionX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "103": {
+    "name": "randomAddPositionY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "104": {
+    "name": "randomAddRawPositionX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "105": {
+    "name": "physicsXImpulse",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "106": {
+    "name": "physicsXImpulseRaw",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "107": {
+    "name": "addVelocityX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "108": {
+    "name": "addVelocityXRaw",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "109": {
+    "name": "pushVelocityX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "110": {
+    "name": "popVelocityX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "111": {
+    "name": "velocityXPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "112": {
+    "name": "physicsYImpulse",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "113": {
+    "name": "addVelocityY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "114": {
+    "name": "pushVelocityY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "115": {
+    "name": "popVelocityY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "116": {
+    "name": "velocityYPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "117": {
+    "name": "randomAddVelocityX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "118": {
+    "name": "randomAddVelocityY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "119": {
+    "name": "randomAddRawVelocityX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "120": {
+    "name": "setAcceleration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "121": {
+    "name": "setRawAcceleration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "122": {
+    "name": "addAcceleration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "123": {
+    "name": "addRawAcceleration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "124": {
+    "name": "pushAcceleration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "125": {
+    "name": "popAcceleration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "126": {
+    "name": "accelerationPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "127": {
+    "name": "setGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "128": {
+    "name": "addGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "129": {
+    "name": "pushGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "130": {
+    "name": "popGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "131": {
+    "name": "gravityPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "132": {
+    "name": "randomAddAcceleration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "133": {
+    "name": "randomAddGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "134": {
+    "name": "randomAddAccelerationRaw",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "135": {
+    "name": "resetGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "136": {
+    "name": "defaultGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "137": {
+    "name": "setInertia",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "138": {
+    "name": "setInertiaRaw",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "139": {
+    "name": "addInertia",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "140": {
+    "name": "addInertiaRaw",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "141": {
+    "name": "pushInertia",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "142": {
+    "name": "popInertia",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "143": {
+    "name": "inertiaPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "144": {
+    "name": "ignoreInertia",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "145": {
+    "name": "randomAddInertia",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "146": {
+    "name": "randomAddRawInertia",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "147": {
+    "name": "defaultGravity2",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "148": {
+    "name": "setObjectWidth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "149": {
+    "name": "addObjectWidth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "150": {
+    "name": "objectWidthPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "151": {
+    "name": "setObjectWidthScaleSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "152": {
+    "name": "addObjectWidthScaleSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "153": {
+    "name": "objectWidthScaleSpeedPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "154": {
+    "name": "randomAddObjectWidth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "155": {
+    "name": "randomAddObjectWidthScaleSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "156": {
+    "name": "setObjectHeight",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "157": {
+    "name": "addObjectHeight",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "158": {
+    "name": "objectHeightPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "159": {
+    "name": "setObjectHeightScaleSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "160": {
+    "name": "addObjectHeightScaleSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "161": {
+    "name": "objectHeightScaleSpeedPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "162": {
+    "name": "randomAddObjectHeight",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "163": {
+    "name": "randomAddObjectHeightScaleSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "164": {
+    "name": "setAngle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "165": {
+    "name": "addAngle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "166": {
+    "name": "setAngleSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "167": {
+    "name": "addAngleSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "168": {
+    "name": "angleSpeedPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "169": {
+    "name": "randomAddAngle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "170": {
+    "name": "randomAddAngleSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "171": {
+    "name": "randomAngle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "172": {
+    "name": "setTransformCenterX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "173": {
+    "name": "setTransformCenterY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "174": {
+    "name": "setSpeedTimeLimit",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "175": {
+    "name": "setBoundRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "176": {
+    "name": "haltMomentum",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "177": {
+    "name": "moveObjectToCollisionPoint",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "178": {
+    "name": "moveToObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "179": {
+    "name": "moveObjectToOtherObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "180": {
+    "name": "setObjectDepth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "181": {
+    "name": "addObjectDepth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "182": {
+    "name": "objectDepthPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "183": {
+    "name": "setObjectDepthScaleSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "184": {
+    "name": "addObjectDepthScaleSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "185": {
+    "name": "objectDepthScaleSpeedPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "186": {
+    "name": "randomAddObjectDepth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "187": {
+    "name": "randomAddObjectDepthScaleSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "188": {
+    "name": "setObjectSize",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "189": {
+    "name": "addObjectSize",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "190": {
+    "name": "objectSizePercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "191": {
+    "name": "setObjectSizeScaleSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "192": {
+    "name": "addObjectSizeScaleSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "193": {
+    "name": "objectSizeScaleSpeedPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "194": {
+    "name": "randomAddObjectSize",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "195": {
+    "name": "randomAddObjectSizeScaleSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "196": {
+    "name": "warp",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "197": {
+    "name": "warpToOffset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "198": {
+    "name": "warpWithArg",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "199": {
+    "name": "offsetAngleY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "200": {
+    "name": "setAngleBySpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "201": {
+    "name": "setSpeedByCPC",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "202": {
+    "name": "setSpeedByAngle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "203": {
+    "name": "randomAddObjectSizeFix",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "204": {
+    "name": "randomAddObjectSizeScaleSpeedFix",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "205": {
+    "name": "setStartupPos",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "206": {
+    "name": "resetHomingJump",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "207": {
+    "name": "velocityXRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "208": {
+    "name": "ExTempPerSpeedX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "209": {
+    "name": "ignoreSpeedTimeX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "210": {
+    "name": "setPositionXInBattle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "211": {
+    "name": "setRawPositionXInBattle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "212": {
+    "name": "LimitInertia",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "231": {
+    "name": "setAngleX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "232": {
+    "name": "setAngleY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "233": {
+    "name": "grabOrRelease",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "234": {
+    "name": "hit",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "235": {
+    "name": "recoveryState",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "236": {
+    "name": "disableHitForSprite",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "237": {
+    "name": "disableHitForState",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "238": {
+    "name": "useCenterOffset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "239": {
+    "name": "flipDirection",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "240": {
+    "name": "faceOpponent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "241": {
+    "name": "faceLeft",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "242": {
+    "name": "faceRight",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "243": {
+    "name": "normalAttack",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "244": {
+    "name": "specialAttack",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "245": {
+    "name": "overdriveAttack",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "246": {
+    "name": "instantKillAttack",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "247": {
+    "name": "romanCancelAttack",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "248": {
+    "name": "setPushboxWidthFront",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "249": {
+    "name": "setPushboxWidth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "250": {
+    "name": "setPushboxHeight",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "251": {
+    "name": "setNoCollision",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "252": {
+    "name": "pushboxCollisionSameSide",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "253": {
+    "name": "setZVal",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "254": {
+    "name": "addZVal",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "255": {
+    "name": "pushboxFix",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "256": {
+    "name": "ignorePushboxPlayer",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "257": {
+    "name": "ignorePushboxEnemy",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "258": {
+    "name": "ignorePushboxGhost",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "259": {
+    "name": "ignorePushboxServantA",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "260": {
+    "name": "ignorePushboxServantB",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "261": {
+    "name": "ignorePushboxServantC",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "262": {
+    "name": "pushCollisionOnPlayersOnly",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "263": {
+    "name": "setVariableZPosition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "264": {
+    "name": "setZOffset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "267": {
+    "name": "checkScreenSideCollisions",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "268": {
+    "name": "checkScreenCollision",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "269": {
+    "name": "forceShadowOff",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "270": {
+    "name": "checkCeilingCollision",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "271": {
+    "name": "superFreeze",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "272": {
+    "name": "forceBackPosition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "273": {
+    "name": "attackOnlyHitMainPlayers",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "274": {
+    "name": "cancelWorldStop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "276": {
+    "name": "setCommonActionMark",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "277": {
+    "name": "addCommonActionMark",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "278": {
+    "name": "commonActionMarkPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "279": {
+    "name": "flagAddCommonActionMark",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "280": {
+    "name": "flagDeleteCommonActionMark",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "281": {
+    "name": "forceFloorReflectOff",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "283": {
+    "name": "autoFloorEffectOn",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "286": {
+    "name": "sustainRepulsion",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "287": {
+    "name": "worldCollision",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "289": {
+    "name": "setMaxActionTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "290": {
+    "name": "setAttackObjectMax",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "291": {
+    "name": "keepAirDash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "292": {
+    "name": "tensionUsage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "293": {
+    "name": "addDefence",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "294": {
+    "name": "ignoreSuperFreezeFromAlly",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "295": {
+    "name": "ignoreSuperFreeze",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "296": {
+    "name": "tensionCooldown",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "297": {
+    "name": "burstCooldown",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "298": {
+    "name": "ignoreDeactivate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "299": {
+    "name": "forceDeactivateObjects",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "300": {
+    "name": "startupDestructiveFinishBG",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "301": {
+    "name": "startDestructiveFinish",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "302": {
+    "name": "endDestructiveFinish",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "303": {
+    "name": "forceStopAssistAttack",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "304": {
+    "name": "forceStopEnemyAssistAttack",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "305": {
+    "name": "forceStopAllAssistAttack",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "306": {
+    "name": "dmgGuardStopCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "307": {
+    "name": "removeAllRisc",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "308": {
+    "name": "reAttackInterupt",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "309": {
+    "name": "tensionReduce",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "337": {
+    "name": "setPaletteId",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "338": {
+    "name": "setAlphaColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "339": {
+    "name": "addAlphaColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "340": {
+    "name": "alphaColorPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "341": {
+    "name": "setAlphaColorSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "342": {
+    "name": "ddAlphaColorSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "343": {
+    "name": "alphaColorSpeedPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "344": {
+    "name": "setRedColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "345": {
+    "name": "addRedColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "346": {
+    "name": "redColorPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "347": {
+    "name": "setRedColorSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "348": {
+    "name": "addRedColorSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "349": {
+    "name": "redColorSpeedPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "350": {
+    "name": "setGreenColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "351": {
+    "name": "addGreenColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "352": {
+    "name": "greenColorPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "353": {
+    "name": "setGreenColorSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "354": {
+    "name": "addGreenColorSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "355": {
+    "name": "greenColorSpeedPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "356": {
+    "name": "setBlueColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "357": {
+    "name": "addBlueColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "358": {
+    "name": "blueColorPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "359": {
+    "name": "setBlueColorSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "360": {
+    "name": "addBlueColorSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "361": {
+    "name": "blueColorSpeedPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "362": {
+    "name": "setDestColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "363": {
+    "name": "setColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "364": {
+    "name": "setColorRGBA",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "365": {
+    "name": "requestShake",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "366": {
+    "name": "afterImage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "367": {
+    "name": "afterImageType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "368": {
+    "name": "toggleBlendNormal",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "369": {
+    "name": "forceEnableBlendNormal",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "370": {
+    "name": "forceEnableBlendAdd",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "371": {
+    "name": "forceEnableBlendHalfAdd",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "372": {
+    "name": "forceEnableBlendSub",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "373": {
+    "name": "setDestColorRGBA",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "375": {
+    "name": "disableDisplay2D",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "376": {
+    "name": "overrideAddColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "377": {
+    "name": "overrideMulColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "378": {
+    "name": "overrideLightColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "379": {
+    "name": "overrideAmbientColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "380": {
+    "name": "resetCharacterColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "381": {
+    "name": "enableDarkArea",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "389": {
+    "name": "setBgmVolume",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "390": {
+    "name": "setSfxVolume",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "391": {
+    "name": "setWorldSaturation",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "392": {
+    "name": "setMotionBlurAmount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "393": {
+    "name": "resetMotionBlurAmount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "394": {
+    "name": "distortionTexture",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "395": {
+    "name": "setDistortionTextureLevel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "396": {
+    "name": "setDistortionLevelSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "397": {
+    "name": "startShenronSystem",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "398": {
+    "name": "finishShenronSystem",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "399": {
+    "name": "openShenronUI",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "400": {
+    "name": "closeShenronUI",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "401": {
+    "name": "decideShenronWish",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "402": {
+    "name": "executeShenronWish",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "403": {
+    "name": "hideBG",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "404": {
+    "name": "displayShenron",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "405": {
+    "name": "startShenronCountdown",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "406": {
+    "name": "shenronVoice",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "410": {
+    "name": "setPostProcessSaturation",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "411": {
+    "name": "setPostProcessDOF",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "412": {
+    "name": "focalDistance",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "413": {
+    "name": "focalRegion",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "414": {
+    "name": "focalNearTransition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "415": {
+    "name": "focalFarTransition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "416": {
+    "name": "focalNearBlurSize",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "417": {
+    "name": "focalFarBlurSize",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "418": {
+    "name": "createGlareEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "419": {
+    "name": "removeGlareEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "420": {
+    "name": "displayGlare",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "421": {
+    "name": "setGlareColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "422": {
+    "name": "setGlareScale",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "423": {
+    "name": "setGlareOffset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "424": {
+    "name": "setLuminancePowerAndThreshold",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "425": {
+    "name": "setDiffusionLuminance",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "426": {
+    "name": "setDiffusionThreshold",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "427": {
+    "name": "resetSaturation",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "428": {
+    "name": "resetDOF",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "429": {
+    "name": "resetDiffusion",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "445": {
+    "name": "createObjectWithArg",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "446": {
+    "name": "createObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "447": {
+    "name": "deleteParticleByName",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "448": {
+    "name": "createParticle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "449": {
+    "name": "createParticleWithArg2",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "450": {
+    "name": "linkParticle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "451": {
+    "name": "linkPawnWithAnimation",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "452": {
+    "name": "linkObjectPushCollision",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "453": {
+    "name": "linkObjectAngle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "454": {
+    "name": "linkObjPosition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "455": {
+    "name": "linkObjectDirection",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "456": {
+    "name": "stopLinkObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "457": {
+    "name": "setLinkObjectDestroyOnStateChange",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "458": {
+    "name": "setLinkObjectDestroyOnDamage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "459": {
+    "name": "linkObjectPositionCenter",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "460": {
+    "name": "linkObjectSize",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "461": {
+    "name": "linkObjectColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "462": {
+    "name": "linkModelPersOff",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "463": {
+    "name": "linkCommonPolyLine",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "464": {
+    "name": "randomAddSpeedSphere",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "465": {
+    "name": "linkParticleEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "466": {
+    "name": "linkObjectZ",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "467": {
+    "name": "linkObjectCollision",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "468": {
+    "name": "linkPolyLine",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "469": {
+    "name": "createBGParticle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "470": {
+    "name": "createBGParticleArg",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "471": {
+    "name": "linkBGParticle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "472": {
+    "name": "linkBGParticleArg",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "473": {
+    "name": "linkBGParticleEX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "474": {
+    "name": "createBGObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "475": {
+    "name": "createBGObjectArg",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "476": {
+    "name": "linkCollisionObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "477": {
+    "name": "destructionCollision",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "478": {
+    "name": "updateSocketPosition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "479": {
+    "name": "createSocketLinkParticle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "480": {
+    "name": "deleteSocketLinkParticle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "481": {
+    "name": "linkObjectMaterialSet",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "482": {
+    "name": "linkObjectCommonMaterialParam",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "483": {
+    "name": "LinkObjectAsanoLight",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "485": {
+    "name": "createParticleWithArg",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "486": {
+    "name": "linkParticleWithArg",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "487": {
+    "name": "DeleteNoLinkParticle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "513": {
+    "name": "setPaletteSubID",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "515": {
+    "name": "eventMessageToDelay",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "516": {
+    "name": "eventMessageToDelayWithArg",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "544": {
+    "name": "enemyGrabSprite",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "545": {
+    "name": "enemyExDamageSprite",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "546": {
+    "name": "setGripPosition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "547": {
+    "name": "spriteStopByLockWait",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "548": {
+    "name": "lockLinkPositionOff",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "549": {
+    "name": "lockEnemyDisplay",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "550": {
+    "name": "backThrowDirection",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "551": {
+    "name": "setSparkingBurstTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "581": {
+    "name": "screenPosition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "582": {
+    "name": "displaySorbetHUD",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "592": {
+    "name": "SoundOption_MainSideOnly",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "593": {
+    "name": "optionVoiceLipSync",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "594": {
+    "name": "optionVoiceRandomChannel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "595": {
+    "name": "priorityVoice",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "596": {
+    "name": "optionVoicePriority",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "597": {
+    "name": "setVoiceConditionVar",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "598": {
+    "name": "setVoiceConditionHealth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "599": {
+    "name": "setVoiceConditionEnemyHealth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "600": {
+    "name": "setVoiceConditionChara",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "601": {
+    "name": "setupVoice",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "602": {
+    "name": "clearSoundOptions",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "603": {
+    "name": "setVolume",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "604": {
+    "name": "setPitch",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "605": {
+    "name": "setSoundCenter",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "606": {
+    "name": "setVoiceChannel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "607": {
+    "name": "smartDamageRandomVoiceLine",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "608": {
+    "name": "voiceToTeamMember",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "609": {
+    "name": "forceRandomDamageVoiceLine",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "610": {
+    "name": "cmnVoiceLine",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "611": {
+    "name": "cycleCmnSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "612": {
+    "name": "cmnSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "613": {
+    "name": "voiceLine",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "614": {
+    "name": "narratorVoiceLine",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "615": {
+    "name": "characterSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "616": {
+    "name": "smartVoiceLine",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "617": {
+    "name": "deathVoice",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "618": {
+    "name": "randomVoiceLine",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "619": {
+    "name": "smartRandomVoiceLine",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "620": {
+    "name": "damageLevelVoiceLine",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "621": {
+    "name": "attackVoiceLine",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "622": {
+    "name": "voiceTestByMouthTable",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "623": {
+    "name": "smartVoiceLineEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "624": {
+    "name": "forceRandomVoice",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "625": {
+    "name": "forceRandomVoiceWeak",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "626": {
+    "name": "playCharLoopSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "627": {
+    "name": "stopCharLoopSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "628": {
+    "name": "attackVoiceGG",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "629": {
+    "name": "commonVoiceTable",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "630": {
+    "name": "tutorialVoice",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "631": {
+    "name": "commonBankSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "632": {
+    "name": "privateBankSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "633": {
+    "name": "stopBankSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "634": {
+    "name": "stopBankSfxAll",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "635": {
+    "name": "commonBankSfxPitch",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "636": {
+    "name": "privateBankSePitch",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "637": {
+    "name": "commonSetSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "638": {
+    "name": "privateSetSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "639": {
+    "name": "commonSetSfxPitch",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "640": {
+    "name": "privateSetSfxPitch",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "641": {
+    "name": "forceDamageVoiceLine",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "642": {
+    "name": "commonSE",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "643": {
+    "name": "privateSE",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "644": {
+    "name": "randomVoiceLineTwoOptions",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "645": {
+    "name": "enableVoice",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "646": {
+    "name": "cmnFloorSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "647": {
+    "name": "privateFloorSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "648": {
+    "name": "fixAndGetVoicePattern",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "649": {
+    "name": "setupVoiceEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "650": {
+    "name": "SetFloorAttribute",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "651": {
+    "name": "SetFloorSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "658": {
+    "name": "landingEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "663": {
+    "name": "airTechEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "664": {
+    "name": "dashStepEFfect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "665": {
+    "name": "dashStartEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "666": {
+    "name": "wallBounceEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "668": {
+    "name": "dashStopEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "669": {
+    "name": "walkStopEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "670": {
+    "name": "landBreakEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "671": {
+    "name": "auraEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "672": {
+    "name": "effectForDownLv1",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "673": {
+    "name": "effectForDownLv2",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "674": {
+    "name": "effectForDownLv3",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "675": {
+    "name": "brakeSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "676": {
+    "name": "jumpSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "677": {
+    "name": "superJumpSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "678": {
+    "name": "clashParticleEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "679": {
+    "name": "StaticSoundVolume",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "680": {
+    "name": "StaticSoundAllClear",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "681": {
+    "name": "SetupVoice_IgnoreStatic",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "707": {
+    "name": "initializeAttackCategoryByCurrent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "708": {
+    "name": "initializeAttackCategory",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "709": {
+    "name": "attackAllDefault",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "710": {
+    "name": "attackType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "711": {
+    "name": "attackLevel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "712": {
+    "name": "damage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "713": {
+    "name": "resetDamage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "714": {
+    "name": "clashLevel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "715": {
+    "name": "damageFace",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "716": {
+    "name": "clashSevereCheck",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "717": {
+    "name": "atkCameraShake",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "718": {
+    "name": "attackSkillCategory",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "724": {
+    "name": "hitEffectStrike",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "725": {
+    "name": "hitEffectSlash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "726": {
+    "name": "hitEffectFire",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "727": {
+    "name": "hitEffectElectric",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "728": {
+    "name": "hitEffectIce",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "729": {
+    "name": "hitEffectSpecial",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "730": {
+    "name": "hitEffectTsuki",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "731": {
+    "name": "hitEffectOnpa",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "732": {
+    "name": "hitEffectElectricDark",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "733": {
+    "name": "hitEffectBeamClash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "734": {
+    "name": "ignoreClashSameLEvel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "735": {
+    "name": "clashOnlyCommand",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "736": {
+    "name": "damageToRecovery",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "737": {
+    "name": "enemyUniqueEffectOff",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "738": {
+    "name": "disablePunish",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "739": {
+    "name": "atkRedutionAttributeEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "740": {
+    "name": "atkEnemyHitSuperArmor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "741": {
+    "name": "atkEnemyHitSuperArmorDamageRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "742": {
+    "name": "atkEnemyHitSuperArmorHitstop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "743": {
+    "name": "hitEffectElectricBlue",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "754": {
+    "name": "hitAirPushbackX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "755": {
+    "name": "resetHitAirPushbackX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "756": {
+    "name": "counterhitAirPushbackX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "757": {
+    "name": "resetCounterHitAirPushbackX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "758": {
+    "name": "hitVectorAngle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "759": {
+    "name": "hitVectorAngleCounter",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "760": {
+    "name": "hitAirPushbackXOverTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "761": {
+    "name": "counterHitAirPushbackXOverTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "762": {
+    "name": "considerHitAirPushbackX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "763": {
+    "name": "sameAttackNum",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "764": {
+    "name": "sameAttackAddGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "765": {
+    "name": "preGuardRange",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "766": {
+    "name": "hitAirPushbackY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "767": {
+    "name": "resetHitAirPushbackY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "768": {
+    "name": "counterhitAirPushbackY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "769": {
+    "name": "resetCounterHitAirPushbackY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "770": {
+    "name": "hitAirPushbackYOverTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "771": {
+    "name": "counterHitAirPushbackYOverTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "772": {
+    "name": "considerHitAirPushbackY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "773": {
+    "name": "noExtraGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "774": {
+    "name": "preGuardRangeY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "778": {
+    "name": "hitGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "779": {
+    "name": "resetHitGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "780": {
+    "name": "counterhitGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "781": {
+    "name": "resetCounterHitGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "782": {
+    "name": "guardGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "783": {
+    "name": "hitGravityOverTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "784": {
+    "name": "counterHitGravityOverTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "785": {
+    "name": "airGuardPushbackX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "786": {
+    "name": "airGuardPushbackY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "788": {
+    "name": "forceWallBreak",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "789": {
+    "name": "resetWallBounceParams",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "790": {
+    "name": "wallBounceXVelocityPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "791": {
+    "name": "resetWallBounceXVelocityPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "792": {
+    "name": "counterHitWallBounceXVelocityPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "793": {
+    "name": "resetCounterHitWallBounceXVelocityPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "794": {
+    "name": "wallBounceGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "795": {
+    "name": "counterHitWallBounceGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "796": {
+    "name": "wallBounceUntechTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "797": {
+    "name": "counterHitWallBounceUntechTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "798": {
+    "name": "wallBounceUntechTimeAddition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "799": {
+    "name": "counterHitWallBounceUntechTimeAddition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "802": {
+    "name": "groundBounceYVelocityPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "803": {
+    "name": "resetGroundBounceYVelocityPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "804": {
+    "name": "counterHitGroundBounceYVelocityPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "805": {
+    "name": "resetCounterHitGroundBounceYVelocityPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "806": {
+    "name": "groundBounceYVelocity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "807": {
+    "name": "resetGroundBounceYVelocity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "808": {
+    "name": "groundBounceGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "809": {
+    "name": "counterHitGroundBounceGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "810": {
+    "name": "groundBounceUntechTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "811": {
+    "name": "counterHitGroundBounceUntechTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "812": {
+    "name": "groundBounceUntechTimeAddition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "813": {
+    "name": "counterHitGroundBounceUntechTimeAddition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "814": {
+    "name": "groundBounceXVelocity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "815": {
+    "name": "resetGroundBounceXVelocity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "818": {
+    "name": "hitstunAmount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "819": {
+    "name": "resetHitstunAmount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "820": {
+    "name": "counterHitstunAmount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "821": {
+    "name": "resetCounterHitstunAmount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "830": {
+    "name": "untechAmount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "831": {
+    "name": "resetUntechAmount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "832": {
+    "name": "counterUntechAmount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "833": {
+    "name": "resetCounterUntechAmount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "838": {
+    "name": "wallBounceXVelocity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "839": {
+    "name": "resetWallBounceXVelocity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "840": {
+    "name": "wallBounceYVelocity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "841": {
+    "name": "resetWallBounceYVelocity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "842": {
+    "name": "wallBounceCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "843": {
+    "name": "resetWallBounceCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "844": {
+    "name": "counterHitWallBounceCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "845": {
+    "name": "resetCounterHitWallBounceCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "846": {
+    "name": "wallBounceNextAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "847": {
+    "name": "wallBounceYVelocityPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "848": {
+    "name": "resetWallBounceYVelocityPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "849": {
+    "name": "counterHitWallBounceYVelocityPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "850": {
+    "name": "resetCounterHitWallBounceYVelocityPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "854": {
+    "name": "groundBounceCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "855": {
+    "name": "resetGroundBounceCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "856": {
+    "name": "counterHitGroundBounceCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "857": {
+    "name": "resetCounterHitGroundBounceCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "858": {
+    "name": "groundBounceNextAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "859": {
+    "name": "groundBounceXVelocityPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "860": {
+    "name": "resetGroundBounceXVelocityPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "861": {
+    "name": "counterHitGroundBounceXVelocityPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "862": {
+    "name": "resetCounterHitGroundBounceXVelocityPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "870": {
+    "name": "knockdownDuration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "871": {
+    "name": "resetKnockdownDuration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "872": {
+    "name": "counterHitKnockdownDuration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "873": {
+    "name": "resetCounterHitKnockdownDuration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "874": {
+    "name": "wallBounceDownOnly",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "875": {
+    "name": "counterHitWallBounceDownOnly",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "882": {
+    "name": "groundHitEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "883": {
+    "name": "resetGroundHitEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "884": {
+    "name": "groundCounterHitEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "885": {
+    "name": "resetGroundCounterHitEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "894": {
+    "name": "airHitEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "895": {
+    "name": "resetAirHitEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "896": {
+    "name": "airCounterHitEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "897": {
+    "name": "resetAirCounterHitEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "898": {
+    "name": "wallstickDuration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "899": {
+    "name": "resetWallstickDuration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "900": {
+    "name": "counterHitWallstickDuration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "901": {
+    "name": "resetCounterHitWallstickDuration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "902": {
+    "name": "wallBounceInCornerOnly",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "903": {
+    "name": "resetWallBounceInCornerOnly",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "904": {
+    "name": "counterhitWallBounceInCornerOnly",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "905": {
+    "name": "resetCounterHitWallBounceInCornerOnly",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "906": {
+    "name": "rollCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "907": {
+    "name": "resetNoRollLimitPerCombo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "908": {
+    "name": "counterNoRollLimitPerCombo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "909": {
+    "name": "resetCounterNoRollLimitPerCombo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "910": {
+    "name": "damageRecoverRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "911": {
+    "name": "attackEasyGuard",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "912": {
+    "name": "attackRateHit",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "913": {
+    "name": "tensionRateHit",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "914": {
+    "name": "attackPositiveBonus",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "916": {
+    "name": "atkFrozen",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "917": {
+    "name": "frozenTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "918": {
+    "name": "counterHitFrozenTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "919": {
+    "name": "hitSoftKnockdown",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "920": {
+    "name": "counterHitSoftKnockdown",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "921": {
+    "name": "floatHead",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "922": {
+    "name": "floatBody",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "923": {
+    "name": "standOnlyHitLow",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "924": {
+    "name": "fuwafuwa",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "925": {
+    "name": "counterHitFuwafuwa",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "926": {
+    "name": "blowoff",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "927": {
+    "name": "counterHitBlowoff",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "928": {
+    "name": "guardLandingAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "929": {
+    "name": "slowHitstop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "930": {
+    "name": "attackNoShakeXByAttackAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "931": {
+    "name": "attackNoCameraShakeLockAttackAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "933": {
+    "name": "rollDuration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "934": {
+    "name": "resetRollDuration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "935": {
+    "name": "counterHitRollDuration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "936": {
+    "name": "resetCounterHitRollDuration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "937": {
+    "name": "wallBounceWaitTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "938": {
+    "name": "resetWallBounceWaitTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "939": {
+    "name": "counterWallBounceWaitTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "940": {
+    "name": "resetCounterWallBounceWaitTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "941": {
+    "name": "slideDownTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "942": {
+    "name": "resetSlideDownTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "943": {
+    "name": "counterSlideDownTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "944": {
+    "name": "resetCounterSlideDownTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "945": {
+    "name": "atkHitOtg",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "946": {
+    "name": "atkHitOtgAvailable",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "947": {
+    "name": "disableWallBreak",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "948": {
+    "name": "counterDisableWallBreak",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "949": {
+    "name": "wallDamage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "950": {
+    "name": "resetWallDamage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "951": {
+    "name": "counterWallDamage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "952": {
+    "name": "resetCounterWallDamage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "953": {
+    "name": "wallBlowoffType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "954": {
+    "name": "counterWallBlowoffType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "955": {
+    "name": "wallBreakLimitTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "956": {
+    "name": "counterWallBreakLimitTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "957": {
+    "name": "wallBreakDamageNoUpdate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "958": {
+    "name": "atkSystemSkill01",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "963": {
+    "name": "damagePercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "964": {
+    "name": "setGuardCrushDuration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "965": {
+    "name": "disableExtraRiscConsume",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "966": {
+    "name": "bomberRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "967": {
+    "name": "counterBomberRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "968": {
+    "name": "hitRedRomanCancelTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "969": {
+    "name": "counterHitRedRomanCancelTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "995": {
+    "name": "hitStop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "996": {
+    "name": "enemyHitstopAddition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "997": {
+    "name": "attackLockWaitTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1000": {
+    "name": "initialComboScaleCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1001": {
+    "name": "forcedComboScaleCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1002": {
+    "name": "ignorePushbackYScaling",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1003": {
+    "name": "ignorePushbackXScaling",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1004": {
+    "name": "pushbackYPerComboScaleCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1005": {
+    "name": "pushbackXPerComboScaleCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1007": {
+    "name": "forceNextComboScale",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1014": {
+    "name": "hitPositionTypeGuard",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1015": {
+    "name": "appendCollisionEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1016": {
+    "name": "noStaggerUi",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1017": {
+    "name": "armorBreak",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1018": {
+    "name": "attackCollisionForceExpand",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1019": {
+    "name": "canGrab",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1020": {
+    "name": "attackNoHitLoseBalance",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1021": {
+    "name": "burst",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1022": {
+    "name": "blueBurst",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1023": {
+    "name": "blockstunAmount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1024": {
+    "name": "airBlockstunAddition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1025": {
+    "name": "dustEndLockParamClear",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1026": {
+    "name": "faultlessDefenseMinimumPushback",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1027": {
+    "name": "attackRange",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1028": {
+    "name": "setProjectileDurability",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1029": {
+    "name": "recoverySubObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1030": {
+    "name": "finishStopTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1031": {
+    "name": "counterFinishStopTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1032": {
+    "name": "slashUiTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1033": {
+    "name": "counterSlashUiTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1034": {
+    "name": "guardCrushPushback",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1035": {
+    "name": "wallPushback",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1036": {
+    "name": "angleGuardForce",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1037": {
+    "name": "counterHitType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1038": {
+    "name": "counterHitProcess",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1039": {
+    "name": "ignoreBurst",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1040": {
+    "name": "onlyHitGrounded",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1041": {
+    "name": "onlyHitAirborne",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1042": {
+    "name": "attackLockAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1043": {
+    "name": "canGrabDuringHitstun",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1044": {
+    "name": "guardEffectEconomy",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1045": {
+    "name": "damageEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1046": {
+    "name": "guardEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1047": {
+    "name": "damageToFaultlessDefense",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1049": {
+    "name": "throwRange",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1050": {
+    "name": "attackEffectLimit",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1051": {
+    "name": "attackFrontDirection",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1052": {
+    "name": "attackEffectScale",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1053": {
+    "name": "attackComboForceHitEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1055": {
+    "name": "guardCrush",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1056": {
+    "name": "whiffCrouch",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1057": {
+    "name": "attackIgnoreOutPower",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1058": {
+    "name": "attackIgnoreCaution",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1059": {
+    "name": "killType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1060": {
+    "name": "knockdownOnLandHitOnly",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1061": {
+    "name": "onlyHitPlayer",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1062": {
+    "name": "attackPushboxOff",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1063": {
+    "name": "attackShutUpDanmatsuma",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1064": {
+    "name": "nextHitActionName",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1065": {
+    "name": "attackNoHitNotKillCombo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1066": {
+    "name": "attackFinishBackground",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1067": {
+    "name": "attackHitPositionType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1068": {
+    "name": "attackBoundKeepGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1069": {
+    "name": "attackExHitParam",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1070": {
+    "name": "poison",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1071": {
+    "name": "throwRejectType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1072": {
+    "name": "ignoreProration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1073": {
+    "name": "hitMainPlayerOnly",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1074": {
+    "name": "attackKeepOutPower",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1075": {
+    "name": "attackShutUp",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1076": {
+    "name": "whiffIfCombo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1077": {
+    "name": "whiffIfBlock",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1078": {
+    "name": "attackEnemySpriteFix",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1079": {
+    "name": "attackNoRecover",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1080": {
+    "name": "attackThroughArmor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1081": {
+    "name": "nextHitInstantKillOnly",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1082": {
+    "name": "whiffOtg",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1083": {
+    "name": "fatalCounter",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1084": {
+    "name": "hitBothMainPlayerOnly",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1085": {
+    "name": "hitTargetPlayerOnly",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1086": {
+    "name": "minimumDamagePercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1087": {
+    "name": "prorationTypeHistory",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1088": {
+    "name": "wallBounceFix",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1089": {
+    "name": "airNokezori",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1090": {
+    "name": "allHitsCounter",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1091": {
+    "name": "damageSpriteEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1092": {
+    "name": "setProration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1093": {
+    "name": "setForcedProration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1094": {
+    "name": "attackDirectionReverse",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1095": {
+    "name": "riscProration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1096": {
+    "name": "stunValue",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1097": {
+    "name": "attackHorizontal",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1098": {
+    "name": "guardType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1099": {
+    "name": "isAirUnblockable",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1100": {
+    "name": "noHitThrowResist",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1101": {
+    "name": "throwSprite",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1102": {
+    "name": "pushbackX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1103": {
+    "name": "pushbackXForHit",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1104": {
+    "name": "crouchHitstunAddition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1105": {
+    "name": "airHitstunFromLandAddition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1106": {
+    "name": "autoParam",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1107": {
+    "name": "easyClash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1108": {
+    "name": "atkAngle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1109": {
+    "name": "staggerDuration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1110": {
+    "name": "shortHitstop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1111": {
+    "name": "disableHitstop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1112": {
+    "name": "disableHitstopForSelf",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1113": {
+    "name": "dustWallBounce",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1114": {
+    "name": "dustWallBounce1",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1115": {
+    "name": "deadAngle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1116": {
+    "name": "ignoreInvuln",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1117": {
+    "name": "tensionGainOnConnect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1118": {
+    "name": "hitSoundEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1119": {
+    "name": "guardSoundEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1120": {
+    "name": "throwLockExecute",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1121": {
+    "name": "attackLevelForGuard",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1122": {
+    "name": "riscGain",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1123": {
+    "name": "riscConsume",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1124": {
+    "name": "riscConsumeStarter",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1125": {
+    "name": "riscConsumeOnce",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1126": {
+    "name": "noScalingAll",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1127": {
+    "name": "noGravityScaling",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1128": {
+    "name": "noHitstunScaling",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1129": {
+    "name": "noPushbackScaling",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1130": {
+    "name": "ignoreOtg",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1131": {
+    "name": "noDustScaling",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1132": {
+    "name": "noDamageScaling",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1133": {
+    "name": "hitOtg",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1134": {
+    "name": "setComboPushbackLevel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1137": {
+    "name": "attackKezuri",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1138": {
+    "name": "attackReflect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1139": {
+    "name": "attackLockKeep",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1140": {
+    "name": "attackBallMof",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1141": {
+    "name": "attackBallMofFirst",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1142": {
+    "name": "displayHitSparks",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1143": {
+    "name": "prorationTandan",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1144": {
+    "name": "unburstableTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1145": {
+    "name": "invulnTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1146": {
+    "name": "dustInvulnTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1147": {
+    "name": "noEnemyHitstop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1148": {
+    "name": "hitCommonSfxAppend",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1149": {
+    "name": "damageSprite",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1150": {
+    "name": "noFinishStop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1151": {
+    "name": "noFinishCamera",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1152": {
+    "name": "clashOnly",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1153": {
+    "name": "projectileHitstopClash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1154": {
+    "name": "attackMultiHit",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1155": {
+    "name": "noStaggerRecovery",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1156": {
+    "name": "lifeStealPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1157": {
+    "name": "dontAddComboCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1158": {
+    "name": "strikeOrThrow",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1159": {
+    "name": "exDamageType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1160": {
+    "name": "enemyDamageInvulnForceAndNoRomanCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1161": {
+    "name": "hellfireIgnoreDemo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1162": {
+    "name": "momItem",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1163": {
+    "name": "blitzBreak",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1164": {
+    "name": "hellfire",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1165": {
+    "name": "missionName",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1166": {
+    "name": "doubleSlashEffectBugFix",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1167": {
+    "name": "enableGuardCrush",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1168": {
+    "name": "wallStickKudariOk",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1169": {
+    "name": "hitAirPushbackXGensui",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1170": {
+    "name": "nagenuke",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1171": {
+    "name": "dustAttack",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1172": {
+    "name": "superDustAttack",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1173": {
+    "name": "chijoutuujounageTsukami",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1174": {
+    "name": "kuuchuutuujounageTsukami",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1175": {
+    "name": "chijoutuujounageTsukamiExecute",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1176": {
+    "name": "kuuchuutuujounageTsukamiExecute",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1177": {
+    "name": "burstUltimate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1178": {
+    "name": "neoBlitz",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1179": {
+    "name": "yogore",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1180": {
+    "name": "atkBlitzHajiki",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1181": {
+    "name": "appendCollision",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1182": {
+    "name": "zReversal",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1183": {
+    "name": "projectileIignoreZReversal",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1184": {
+    "name": "magnetism",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1185": {
+    "name": "magnetismX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1186": {
+    "name": "magnetismY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1187": {
+    "name": "groundTech",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1188": {
+    "name": "dragonRushClashEnd",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1189": {
+    "name": "hitCountDouble",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1190": {
+    "name": "headAttackAttribute",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1191": {
+    "name": "additionalHitCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1192": {
+    "name": "hitCommonBankSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1193": {
+    "name": "guardCommonBankSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1194": {
+    "name": "hitCommonSetSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1195": {
+    "name": "guardCommonSetSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1196": {
+    "name": "dragonRushClashFrame",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1197": {
+    "name": "destructiveFinish",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1198": {
+    "name": "destructiveFinishExplode",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1199": {
+    "name": "destructiveFinishBeam",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1200": {
+    "name": "attackSnapback",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1201": {
+    "name": "throwHitReaction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1202": {
+    "name": "hitCommonSfxReset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1203": {
+    "name": "chipDamagePercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1204": {
+    "name": "hitTensionPenalty",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1205": {
+    "name": "hitOncePerCombo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1206": {
+    "name": "noTensionSelfDamage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1207": {
+    "name": "atkMagnetismXActPosBase",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1208": {
+    "name": "atkMagnetismYActPosBase",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1209": {
+    "name": "hitOnceInComboTeam",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1210": {
+    "name": "airPushback",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1211": {
+    "name": "guardCommonSfxAppend",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1212": {
+    "name": "walkFSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1213": {
+    "name": "walkBSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1214": {
+    "name": "initDashFSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1215": {
+    "name": "bDashXSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1216": {
+    "name": "bDashYSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1217": {
+    "name": "bDashGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1218": {
+    "name": "forwardJumpDistance",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1219": {
+    "name": "backwardJumpDistance",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1220": {
+    "name": "jumpHeight",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1221": {
+    "name": "initGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1222": {
+    "name": "forwardSuperJumpDistance",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1223": {
+    "name": "backwardSuperJumpDistance",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1224": {
+    "name": "superJumpHeight",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1225": {
+    "name": "superJumpGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1226": {
+    "name": "fDashAccelSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1227": {
+    "name": "fDashFriction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1228": {
+    "name": "initHomingJumpMaxYSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1229": {
+    "name": "initHomingJumpMaxXSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1230": {
+    "name": "initHomingJumpXReduce",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1231": {
+    "name": "initHomingJumpYOffset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1232": {
+    "name": "airDashMinimumHeight",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1233": {
+    "name": "airFDashTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1234": {
+    "name": "airBDashTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1235": {
+    "name": "stunResistance",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1236": {
+    "name": "defence",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1237": {
+    "name": "guts",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1238": {
+    "name": "critical",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1239": {
+    "name": "damageWeight",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1240": {
+    "name": "airDashCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1241": {
+    "name": "doubleJumpCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1242": {
+    "name": "airFDashNoAttackTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1243": {
+    "name": "airBDashNoAttackTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1244": {
+    "name": "forwardWalkTension",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1245": {
+    "name": "forwardJumpTension",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1246": {
+    "name": "forwardDashTension",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1247": {
+    "name": "airFDashTension",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1248": {
+    "name": "guardBalanceDefence",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1249": {
+    "name": "guardBalanceTension",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1250": {
+    "name": "instantBlockTension",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1251": {
+    "name": "airdashFSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1252": {
+    "name": "airDashBackVelocity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1253": {
+    "name": "pushboxWidthStand",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1254": {
+    "name": "pushboxHeightStand",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1255": {
+    "name": "pushboxWidthCrouch",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1256": {
+    "name": "pushboxHeightCrouch",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1257": {
+    "name": "pushboxWidthAir",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1258": {
+    "name": "pushboxHeightAir",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1259": {
+    "name": "pushboxHeightLowAir",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1260": {
+    "name": "closeSlashRange",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1261": {
+    "name": "initJumpMotionFrame",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1262": {
+    "name": "shoesType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1263": {
+    "name": "health",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1264": {
+    "name": "charaName",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1265": {
+    "name": "negativeAnti",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1266": {
+    "name": "extendPushboxX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1267": {
+    "name": "forceNormalDemoAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1268": {
+    "name": "privateFlag",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1269": {
+    "name": "homingJumpYOffsetRED",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1270": {
+    "name": "airControlSpeedForwardX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1271": {
+    "name": "airControlSpeedBackwardX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1272": {
+    "name": "airControlSpeedUpY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1273": {
+    "name": "airControlSpeedDownY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1274": {
+    "name": "airBDashYSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1275": {
+    "name": "airBDashYGravity",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1276": {
+    "name": "cooldownTimeAssist",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1277": {
+    "name": "cooldownProrationTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1278": {
+    "name": "cooldowinTimeSwitch",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1279": {
+    "name": "cooldownTimeDhc",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1280": {
+    "name": "cooldownTimeGuardCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1281": {
+    "name": "cooldownTimeSnapback",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1282": {
+    "name": "recoverHealth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1283": {
+    "name": "auraEffectCharge",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1284": {
+    "name": "auraEffectSuperDash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1285": {
+    "name": "auraEffectSuperDashEnd",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1286": {
+    "name": "auraEffectSuperDashStart",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1287": {
+    "name": "auraEffectDragonRush",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1288": {
+    "name": "initCharacterSize",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1289": {
+    "name": "faultlessDefenseGuardStop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1290": {
+    "name": "faultlessDefenseGuardTension",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1291": {
+    "name": "setFDConstantMeterDrain",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1292": {
+    "name": "faultlessDefensePushback",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1293": {
+    "name": "maxAirControlSpeedForwardX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1294": {
+    "name": "maxAirControlSpeedBackX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1295": {
+    "name": "charAttributeType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1296": {
+    "name": "weight",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1297": {
+    "name": "jumpLandingStiffFrame",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1298": {
+    "name": "innerCooldownTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1299": {
+    "name": "cpuGuardLevelBonus",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1300": {
+    "name": "cpuWeakenRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1301": {
+    "name": "cpuTokuiKyori",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1302": {
+    "name": "cpuTokuiKyoriKodawari",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1303": {
+    "name": "changeWeight",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1304": {
+    "name": "resetWeightDefault",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1305": {
+    "name": "landStunDecreaseTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1306": {
+    "name": "airStunDecreaseTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1307": {
+    "name": "tensionBalanceFront",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1308": {
+    "name": "tensionBalanceBack",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1309": {
+    "name": "tensionBalanceAtkHit",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1310": {
+    "name": "tensionBalanceGuard",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1311": {
+    "name": "tensionBalanceJustGuard",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1312": {
+    "name": "negativePenaltyNoAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1313": {
+    "name": "negativePenaltyTouchingWall",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1314": {
+    "name": "tensionBalanceMagnify",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1315": {
+    "name": "negativePenaltyMagnify",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1316": {
+    "name": "distanceThreshold",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1317": {
+    "name": "tensionBalanceDistanceMagnify",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1318": {
+    "name": "negativePenaltyDistanceMagnify",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1319": {
+    "name": "negativePenaltyBack",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1320": {
+    "name": "tensionBalanceNegativeExec",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1321": {
+    "name": "positiveBonusSetting",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1322": {
+    "name": "negativePenaltySetting",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1323": {
+    "name": "guardTension",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1324": {
+    "name": "attackMissionDrawName",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1325": {
+    "name": "setDamageSprite",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1326": {
+    "name": "resetCommonActionMark",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1327": {
+    "name": "setExtendCollision",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1328": {
+    "name": "setDamageSpriteEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1329": {
+    "name": "riscGainAddPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1333": {
+    "name": "enableStand",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1334": {
+    "name": "enableCrouch",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1335": {
+    "name": "enableWalkForward",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1336": {
+    "name": "enableForwardDash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1337": {
+    "name": "enableForwardCrouchWalk",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1338": {
+    "name": "enableWalkBack",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1339": {
+    "name": "enableBackDash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1340": {
+    "name": "enableBackCrouchWalk",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1341": {
+    "name": "enableJump",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1342": {
+    "name": "enableFaultlessDefenseCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1343": {
+    "name": "enableDoubleJump",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1344": {
+    "name": "enableAirForwardDash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1345": {
+    "name": "enableAirBackDash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1346": {
+    "name": "enableThrowTech",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1347": {
+    "name": "enableNormals",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1348": {
+    "name": "enableSpecials",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1349": {
+    "name": "enableStandTurn",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1350": {
+    "name": "enableCrouchTurn",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1351": {
+    "name": "enableDeath",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1352": {
+    "name": "enableBlock",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1353": {
+    "name": "enableTagAndAssist",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1354": {
+    "name": "enableDhc",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1355": {
+    "name": "enableAirTurn",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1356": {
+    "name": "enableTag",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1357": {
+    "name": "enableRomanCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1358": {
+    "name": "enableAssist",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1359": {
+    "name": "enableFaultlessDefense",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1360": {
+    "name": "enableAutoThrowTech",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1361": {
+    "name": "enableDemo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1362": {
+    "name": "enableProximityBlock",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1363": {
+    "name": "enableAutoGuard",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1364": {
+    "name": "enableBurst",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1365": {
+    "name": "enableZReflect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1366": {
+    "name": "enableKiCharge",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1367": {
+    "name": "enableAirTech",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1368": {
+    "name": "enableNamaFault",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1369": {
+    "name": "enableVanish",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1370": {
+    "name": "enableExRomanCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1371": {
+    "name": "enableAll",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1376": {
+    "name": "forceBloomMaskOn",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1385": {
+    "name": "setTutorialCPULevel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1386": {
+    "name": "checkEnemyInput",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1387": {
+    "name": "setTutorialButtonGuide",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1405": {
+    "name": "moveType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1406": {
+    "name": "characterState",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1407": {
+    "name": "registerMove",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1408": {
+    "name": "movePriority",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1409": {
+    "name": "addMove",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1410": {
+    "name": "endMove",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1411": {
+    "name": "addMoveFlag",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1412": {
+    "name": "disableCancelsIntoMove",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1413": {
+    "name": "isFollowupMove",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1414": {
+    "name": "moveSubType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1415": {
+    "name": "moveRewriteMode",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1416": {
+    "name": "hitstopCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1417": {
+    "name": "removeMoveFlag",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1418": {
+    "name": "noJumpCancelCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1419": {
+    "name": "forceDisableFlag",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1420": {
+    "name": "moveInput",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1421": {
+    "name": "moveAlias",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1422": {
+    "name": "moveRequestActionFlag",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1423": {
+    "name": "moveSubroutineGroupPriority",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1424": {
+    "name": "moveCallSubroutine",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1425": {
+    "name": "moveNotSame",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1426": {
+    "name": "moveInputDirectionRight",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1427": {
+    "name": "maxChainIntoSelf",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1428": {
+    "name": "moveEnemyHPRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1429": {
+    "name": "moveConditionCheckSubroutine",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1430": {
+    "name": "inputDirectionBaseObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1431": {
+    "name": "moveKeepAirDash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1432": {
+    "name": "moveShareChain",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1433": {
+    "name": "moveHitOrBlockstunCondition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1434": {
+    "name": "deleteInputs",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1435": {
+    "name": "airDashFinish",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1439": {
+    "name": "minimumHeightRequirement",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1440": {
+    "name": "stylishMove",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1441": {
+    "name": "stylishDataCopy",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1442": {
+    "name": "beginStylishComboSlot",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1443": {
+    "name": "moveEnemyXNear",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1444": {
+    "name": "stylishComboSlot",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1445": {
+    "name": "stylishComboSlotClearAll",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1446": {
+    "name": "oneButtonStylish",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1447": {
+    "name": "stylishInitOneButton",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1448": {
+    "name": "stylishInitComboSlot",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1449": {
+    "name": "moveEnemyYRange",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1450": {
+    "name": "stylishBeginCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1503": {
+    "name": "usableByCPU",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1506": {
+    "name": "usableByPlayer",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1507": {
+    "name": "moveRecipe",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1508": {
+    "name": "moveRecipeStopType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1509": {
+    "name": "moveRecipeEKey",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1510": {
+    "name": "moveRecipeEMove",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1511": {
+    "name": "moveRecipeEWait",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1512": {
+    "name": "moveMissionOnly",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1513": {
+    "name": "moveLeverMoveJumpSeal",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1514": {
+    "name": "moveMissionOnlyEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1515": {
+    "name": "moveRecipeStopTypeEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1525": {
+    "name": "cpuEstimateAttackBox",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1537": {
+    "name": "moveEstChusenMorePercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1538": {
+    "name": "cpuEstimatePoint",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1539": {
+    "name": "cpuEstimateLevelLimit",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1540": {
+    "name": "cpuEstimateInterval",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1541": {
+    "name": "cpuEstimateStrengthLimit",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1558": {
+    "name": "cpuEstimateTagGuard",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1559": {
+    "name": "cpuEstimateTagCombo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1560": {
+    "name": "cpuEstimateTagPunish",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1561": {
+    "name": "cpuEstimateTagXNearPunish",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1562": {
+    "name": "cpuEstimateTagXFarPunish",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1563": {
+    "name": "cpuEstimateTagXMidPunish",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1564": {
+    "name": "cpuEstimateTagKiten",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1565": {
+    "name": "cpuIsOverhead",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1566": {
+    "name": "cpuIsLow",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1567": {
+    "name": "cpuIsThrow",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1568": {
+    "name": "cpuIsTaiku",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1569": {
+    "name": "cpuUsesResource",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1570": {
+    "name": "cpuBigDamage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1571": {
+    "name": "cpuEstimateTagKugurare",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1572": {
+    "name": "cpuEstimateTagKuguri",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1573": {
+    "name": "cpuEstimateTagTobare",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1574": {
+    "name": "cpuEstimateTagTobi",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1575": {
+    "name": "cpuEstimateTagInvuln",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1576": {
+    "name": "cpuEstimateTagProjectileInvuln",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1577": {
+    "name": "cpuEstimateTagProjectile",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1578": {
+    "name": "cpuEstimateTagSukidarake",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1579": {
+    "name": "cpuEstimateTagKunage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1580": {
+    "name": "cpuEstimateTagGamenhashi",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1581": {
+    "name": "cpuEstimateTagFromDash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1582": {
+    "name": "cpuEstimateTagNoCombo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1583": {
+    "name": "cpuEstimateTagNoAirCombo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1584": {
+    "name": "cpuEstimateMomBoss",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1585": {
+    "name": "cpuDoNotEstimate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1586": {
+    "name": "cpuBonusRecipe",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1587": {
+    "name": "cpuBerserkRecipe",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1588": {
+    "name": "cpuTagOnHighEstimateOnly",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1589": {
+    "name": "cpuEstimateTagNamepu",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1590": {
+    "name": "skillEstimateTagMemberChangeRequest",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1608": {
+    "name": "skillHighEstimation",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1609": {
+    "name": "skillLowEstimation",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1628": {
+    "name": "addMoveForceDisableFlagQuick",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1629": {
+    "name": "addMoveForceDisableFlag",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1630": {
+    "name": "deleteMoveForceDisableFlag",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1637": {
+    "name": "addWhiffCancelOption",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1638": {
+    "name": "addGatlingOption",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1639": {
+    "name": "addPunchAutoCombo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1640": {
+    "name": "addPunchWhiffAutoCombo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1641": {
+    "name": "addKickAutoCombo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1642": {
+    "name": "addKickWhiffAutoCombo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1643": {
+    "name": "addSlashAutoCombo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1644": {
+    "name": "addSlashWhiffAutoCombo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1645": {
+    "name": "enableOverdriveCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1646": {
+    "name": "enableOverdriveCancelPD",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1647": {
+    "name": "resetRedRCTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1648": {
+    "name": "whiffCancelNext",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1649": {
+    "name": "frcWindow",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1650": {
+    "name": "enableWhiffCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1651": {
+    "name": "enableGatlings",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1652": {
+    "name": "enableJumpCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1653": {
+    "name": "enableSpecialCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1654": {
+    "name": "addPdChain",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1655": {
+    "name": "jumpCancelPD",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1656": {
+    "name": "specialCancelPD",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1657": {
+    "name": "removeWhiffCancelOption",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1658": {
+    "name": "removeGatlingOption",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1659": {
+    "name": "removePDChain",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1660": {
+    "name": "enableDashCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1661": {
+    "name": "dashCancelPD",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1662": {
+    "name": "whiffCancelOptionBufferTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1663": {
+    "name": "resetEasyInputP",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1664": {
+    "name": "resetEasyInputK",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1665": {
+    "name": "resetEasyInputS",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1666": {
+    "name": "resetEasyInputHS",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1667": {
+    "name": "resetEasyInputD",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1668": {
+    "name": "playerActionInitializeByCategory",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1669": {
+    "name": "initializeForResult",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1670": {
+    "name": "initializeForEntry",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1671": {
+    "name": "bufferSpecialInput",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1672": {
+    "name": "bufferOverdriveInput",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1673": {
+    "name": "initializeThrowExe",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1674": {
+    "name": "addPunchAutoComboPD",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1675": {
+    "name": "addKickAutoComboPD",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1676": {
+    "name": "addSlashAutoComboPD",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1677": {
+    "name": "removePunchAutoCombo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1678": {
+    "name": "removeKickAutoCombo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1679": {
+    "name": "removeSlashAutoCombo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1680": {
+    "name": "enableVanishCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1681": {
+    "name": "enableVanishCancelPD",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1682": {
+    "name": "enableDhcCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1683": {
+    "name": "enableDhcCancelPD",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1684": {
+    "name": "disableCancelBurstOnly",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1685": {
+    "name": "enableAirForwardDashCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1686": {
+    "name": "resetInputCommand",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1687": {
+    "name": "senkoInputNormal",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1688": {
+    "name": "enableInvalidCombo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1689": {
+    "name": "enableAirBackwardDashCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1691": {
+    "name": "linkExBlendOnSprite",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1692": {
+    "name": "exBlend",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1693": {
+    "name": "mouthPause",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1694": {
+    "name": "spriteBlendNext",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1695": {
+    "name": "spriteBlend",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1696": {
+    "name": "face",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1697": {
+    "name": "resetFace",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1698": {
+    "name": "hair",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1699": {
+    "name": "playHair",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1700": {
+    "name": "hairReset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1701": {
+    "name": "clearCommonActionControl",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1702": {
+    "name": "displayMesh",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1703": {
+    "name": "mouth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1704": {
+    "name": "mouthStop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1705": {
+    "name": "cutSceneFaceId",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1706": {
+    "name": "cutSceneFaceBegin",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1707": {
+    "name": "demoEndYoinTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1708": {
+    "name": "demoEnd",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1709": {
+    "name": "setCrouch",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1710": {
+    "name": "winAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1711": {
+    "name": "mouthTable",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1712": {
+    "name": "vsCharaMouthTable",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1713": {
+    "name": "addVsCharaMouthTableIndex",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1714": {
+    "name": "faceBrow",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1715": {
+    "name": "faceEye",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1716": {
+    "name": "faceMouth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1717": {
+    "name": "faceBrowReset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1718": {
+    "name": "faceEyeReset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1719": {
+    "name": "faceMouthReset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1720": {
+    "name": "linkBone",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1721": {
+    "name": "exPos",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1722": {
+    "name": "exRot",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1723": {
+    "name": "outlineScale",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1724": {
+    "name": "exScale",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1725": {
+    "name": "resetOverwriteLinkBoneMesh",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1726": {
+    "name": "resetOverwriteLinkBoneOnActionChange",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1727": {
+    "name": "resetBoneControlOnActionChange",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1728": {
+    "name": "animBPParam",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1729": {
+    "name": "outlineScaleEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1731": {
+    "name": "setDepth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1732": {
+    "name": "addDepth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1733": {
+    "name": "pushDepth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1734": {
+    "name": "popDepth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1735": {
+    "name": "randomAddDepth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1736": {
+    "name": "setDepthSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1737": {
+    "name": "addDepthSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1738": {
+    "name": "pushDepthSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1739": {
+    "name": "popDepthSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1740": {
+    "name": "depthSpeedPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1741": {
+    "name": "randomAddDepthSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1742": {
+    "name": "setDepthAcceleration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1743": {
+    "name": "addDepthAcceleration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1744": {
+    "name": "pushDepthAcceleration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1745": {
+    "name": "popDepthAcceleration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1746": {
+    "name": "depthAccelerationPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1747": {
+    "name": "randomAddDepthAcceleration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1748": {
+    "name": "homingJump",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1749": {
+    "name": "homingJumpTarget",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1750": {
+    "name": "resetHomingJumpCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1751": {
+    "name": "initSuperDash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1752": {
+    "name": "setSuperDashBrake",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1753": {
+    "name": "handLeft",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1754": {
+    "name": "handRight",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1755": {
+    "name": "resetHandLeft",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1756": {
+    "name": "resetHandRight",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1761": {
+    "name": "resetDashEasyInput",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1766": {
+    "name": "cameraTargetSelf",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1767": {
+    "name": "fastCamera",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1768": {
+    "name": "noCameraCeiling",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1769": {
+    "name": "noCameraWall",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1770": {
+    "name": "infiniteCameraControl",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1771": {
+    "name": "cameraForInstantKill",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1772": {
+    "name": "cameraWinnerControlStop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1773": {
+    "name": "cameraTargetEnemy",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1783": {
+    "name": "wallBreakDamageNoKill",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1784": {
+    "name": "estimateWallBreakDamage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1785": {
+    "name": "wallBreakDamage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1786": {
+    "name": "hpDamage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1787": {
+    "name": "recoverBlueHealth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1788": {
+    "name": "addHealthSenzu",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1789": {
+    "name": "addHitPointByRateForMOMTabemono",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1790": {
+    "name": "modifyHPByRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1791": {
+    "name": "modifyHP",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1792": {
+    "name": "modifyHPNoDeath",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1793": {
+    "name": "linkModelTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1795": {
+    "name": "setColorByPaletteIndex",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1796": {
+    "name": "ignoreTurnAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1797": {
+    "name": "moveToCenterOffset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1798": {
+    "name": "sendSignal",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1799": {
+    "name": "colorParent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1800": {
+    "name": "linearColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1801": {
+    "name": "ignoreFinishStop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1802": {
+    "name": "pushScreenOffsetBack",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1803": {
+    "name": "sendSignalToAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1804": {
+    "name": "sendSignalToOldestAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1820": {
+    "name": "restoreDoubleJump",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1821": {
+    "name": "addDoubleJumpCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1822": {
+    "name": "restoreAirDash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1823": {
+    "name": "addAirDashCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1824": {
+    "name": "landingStiffTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1825": {
+    "name": "debugLogForScript",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1826": {
+    "name": "superArmorBySGCollision",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1827": {
+    "name": "enableSuperArmor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1828": {
+    "name": "superArmorTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1839": {
+    "name": "superArmorThrow",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1840": {
+    "name": "superArmorType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1844": {
+    "name": "superArmorHP",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1846": {
+    "name": "superArmorBurst",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1847": {
+    "name": "superArmorMid",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1848": {
+    "name": "superArmorOverhead",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1849": {
+    "name": "superArmorLow",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1850": {
+    "name": "superArmorGuardImpossible",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1851": {
+    "name": "superArmorHitstop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1852": {
+    "name": "superArmorSGCollisionShippaiIgnore",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1853": {
+    "name": "superArmorNagenuke",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1854": {
+    "name": "superArmorAirUnblockable",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1855": {
+    "name": "superArmorDamagePercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1856": {
+    "name": "superArmorObjectAttack",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1857": {
+    "name": "superArmorHontaiAttack",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1858": {
+    "name": "superArmorFire",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1859": {
+    "name": "superArmorForReflect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1860": {
+    "name": "superArmorProjectileLevel0",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1861": {
+    "name": "superArmorOverdrive",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1862": {
+    "name": "superArmorRecoverDamageRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1863": {
+    "name": "superArmorBlitzBreak",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1864": {
+    "name": "superArmorAttackLevel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1865": {
+    "name": "superArmorJibaku",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1866": {
+    "name": "superArmorHeadAttribute",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1867": {
+    "name": "invulnKezuri",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1868": {
+    "name": "superArmorArmorBreak",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1869": {
+    "name": "exArmorShotLevelM1",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1883": {
+    "name": "resetExGauge",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1887": {
+    "name": "exGaugeValue",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1888": {
+    "name": "exGaugeMaxValue",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1889": {
+    "name": "exGaugeSplitNum",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1890": {
+    "name": "exGaugeMaxColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1892": {
+    "name": "exGaugeZeroToNoDisp",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1893": {
+    "name": "exGaugeDigit",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1894": {
+    "name": "exGaugeIcon",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1895": {
+    "name": "exGaugeColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1896": {
+    "name": "exGaugeDisplay",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1897": {
+    "name": "exGaugeMaxToNoDisplay",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1898": {
+    "name": "exGaugeFlashEveryTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1899": {
+    "name": "exGaugeFlag",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1901": {
+    "name": "floorCollision",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1902": {
+    "name": "resetOutPower",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1903": {
+    "name": "objectRenderStage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1904": {
+    "name": "skeletonPaletteEffectOnNoStopIdling",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1905": {
+    "name": "clashCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1906": {
+    "name": "demoEndOnVoiceEnd",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1908": {
+    "name": "maxHealth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1909": {
+    "name": "setHP",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1911": {
+    "name": "playerDirection",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1912": {
+    "name": "setBGType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1913": {
+    "name": "actionKeepBG",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1914": {
+    "name": "landingHeight",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1915": {
+    "name": "attackOff",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1916": {
+    "name": "instantInitializeForProjectile",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1917": {
+    "name": "sendSignalEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1918": {
+    "name": "callPrivateFunction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1919": {
+    "name": "dashKeepInputTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1920": {
+    "name": "setPositionXByScreenPercentage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1921": {
+    "name": "setPositionYByScreenPercentage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1922": {
+    "name": "demoEndOnMouthEnd",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1923": {
+    "name": "actionKeepAngle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1925": {
+    "name": "checkDamagedProjectileLevel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1926": {
+    "name": "setSubObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1927": {
+    "name": "setSubObjectSelfZLine",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1946": {
+    "name": "wallBreakSceneEnd",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1947": {
+    "name": "checkWallBreakOrigin",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1948": {
+    "name": "requestAddPosNoLinkAllObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1949": {
+    "name": "requestAddPosNoLinkAllParticle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1950": {
+    "name": "requestForceWallBreak",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1951": {
+    "name": "requestAddAngleNoLinkAllObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1952": {
+    "name": "requestAddAngleNoLinkAllParticle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1953": {
+    "name": "requestForceWallBreakDust",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1954": {
+    "name": "forceHitSignal",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1955": {
+    "name": "linkParticleWithArg2",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1956": {
+    "name": "setAngleByDirection",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1957": {
+    "name": "forceShadowOn",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1958": {
+    "name": "preventMovement",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1959": {
+    "name": "preventGuard",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1960": {
+    "name": "controlDirectionReverse",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1961": {
+    "name": "controlDirectionVersusTarget",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1962": {
+    "name": "controlDirectionLeft",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1963": {
+    "name": "controlDirectionRight",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1964": {
+    "name": "negativeForBackDash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1965": {
+    "name": "slowField",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1966": {
+    "name": "stopHitSignal",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1967": {
+    "name": "pushbackReturnObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1968": {
+    "name": "setMoveCheckBit",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1969": {
+    "name": "colorIsAddColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1970": {
+    "name": "checkStageName",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1971": {
+    "name": "pauseTimer",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1972": {
+    "name": "hideUI",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1973": {
+    "name": "turnLimitByInitialize",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1974": {
+    "name": "ignorePushback",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1975": {
+    "name": "pushboxHeightLow",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1976": {
+    "name": "pauseLinkedParticle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1977": {
+    "name": "hitBeckReturnIgnoreAll",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1978": {
+    "name": "setLightAlpha",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1979": {
+    "name": "addLightAlpha",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1980": {
+    "name": "lightAlphaPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1981": {
+    "name": "setLightAlphaSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1982": {
+    "name": "addLightAlphaSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1983": {
+    "name": "addLightAlphaSpeedPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1984": {
+    "name": "setLightRedColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1985": {
+    "name": "addLightRedColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1986": {
+    "name": "addLightRedColorSpeedPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1987": {
+    "name": "setLightRedColorSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1988": {
+    "name": "addLightRedColorSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1989": {
+    "name": "addLightRedColorSpeedPercent2",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1990": {
+    "name": "setLightGreenColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1991": {
+    "name": "addLightGreenColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1992": {
+    "name": "addLightGreenColorSpeedPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1993": {
+    "name": "setLightGreenColorSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1994": {
+    "name": "addLightGreenColorSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1995": {
+    "name": "addLightGreenColorSpeedPercent2",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1996": {
+    "name": "setLightBlueColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1997": {
+    "name": "addLightBlueColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1998": {
+    "name": "addLightBlueColorSpeedPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "1999": {
+    "name": "setLightBlueColorSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2000": {
+    "name": "addLightBlueColorSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2001": {
+    "name": "addLightBlueColorSpeedPercent2",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2002": {
+    "name": "setDestLightColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2003": {
+    "name": "setLightColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2004": {
+    "name": "setDestLightColorEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2005": {
+    "name": "resetLightColorLoopCount",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2006": {
+    "name": "lightColorIgnoreStop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2007": {
+    "name": "setLightColorByPaletteIndex",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2008": {
+    "name": "setDestLightColorRGB",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2009": {
+    "name": "setLightColorRGB",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2010": {
+    "name": "setDestLightColorRGBEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2011": {
+    "name": "exOutlineOn",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2014": {
+    "name": "setDestColorExRGBA",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2015": {
+    "name": "setDestColorEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2016": {
+    "name": "resetMultColorLoop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2017": {
+    "name": "multColorIgnoreStop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2021": {
+    "name": "pointLightTest",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2022": {
+    "name": "backgroundClashEventDoneFromName",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2023": {
+    "name": "checkBackgroundClashEventDone",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2024": {
+    "name": "backgroundClashEventDone",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2025": {
+    "name": "homingClear",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2026": {
+    "name": "keepEnemyStunCountMin",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2027": {
+    "name": "multiObjectAttackStop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2028": {
+    "name": "YukkiriSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2029": {
+    "name": "homing",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2030": {
+    "name": "checkLastStateName",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2031": {
+    "name": "checkLastAttackHitStateName",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2032": {
+    "name": "instantKillResource",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2033": {
+    "name": "checkCurrentStateName",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2034": {
+    "name": "checkDisplayedMesh",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2035": {
+    "name": "resetAura",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2036": {
+    "name": "moveToPosType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2037": {
+    "name": "moveToPosTypeToPosType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2038": {
+    "name": "addNamerakaMoveX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2039": {
+    "name": "setNamerakaMoveX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2040": {
+    "name": "sendSignalName",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2041": {
+    "name": "checkSignalName",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2042": {
+    "name": "instantKillBgmRequest",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2044": {
+    "name": "linkPawn",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2045": {
+    "name": "playAnimation",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2046": {
+    "name": "setAnimationLoop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2047": {
+    "name": "stepAnimation",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2048": {
+    "name": "stepAnimation2",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2049": {
+    "name": "setAnimationFrame",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2050": {
+    "name": "reverseDisplay",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2051": {
+    "name": "setMeshDirMode",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2052": {
+    "name": "playCameraAnimation",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2053": {
+    "name": "stepAnimationMode",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2054": {
+    "name": "linkParticleStopSpawn",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2055": {
+    "name": "displayModel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2056": {
+    "name": "resetLocalTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2057": {
+    "name": "beginMeshSet",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2058": {
+    "name": "addToMeshSet",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2059": {
+    "name": "endMeshSet",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2060": {
+    "name": "swapMeshSet",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2061": {
+    "name": "clearMeshSet",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2062": {
+    "name": "setSavedMeshSetName",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2063": {
+    "name": "switchMeshSet",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2064": {
+    "name": "setDefaultMeshSet",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2065": {
+    "name": "resetDefaultMeshSet",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2066": {
+    "name": "changeDefaultMeshSet",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2067": {
+    "name": "changeMaterialSet",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2068": {
+    "name": "resetMaterialSet",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2069": {
+    "name": "startLip",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2070": {
+    "name": "startLipEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2071": {
+    "name": "stopLip",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2072": {
+    "name": "startEyeBlink",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2073": {
+    "name": "startEyeBlinkEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2074": {
+    "name": "stopEyeBlink",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2075": {
+    "name": "presetCameraMotion",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2076": {
+    "name": "cameraMotion",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2077": {
+    "name": "cameraShake",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2078": {
+    "name": "stopCameraShake",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2079": {
+    "name": "cameraMotionEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2080": {
+    "name": "targetCamera",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2081": {
+    "name": "targetCameraWorldPos",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2082": {
+    "name": "linkCommonPawn",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2083": {
+    "name": "diffusionFilterToLevel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2084": {
+    "name": "openMouth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2085": {
+    "name": "closeMouth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2086": {
+    "name": "overrideLightDirection",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2087": {
+    "name": "resetLightDirection",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2088": {
+    "name": "stopMoveCamera",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2089": {
+    "name": "playCameraAnimeWorldPos",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2090": {
+    "name": "requestInstantKillBGM",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2091": {
+    "name": "autoResetAnimeMode",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2092": {
+    "name": "depthDarken",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2093": {
+    "name": "linkMatchResultCamera",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2094": {
+    "name": "setMatchResultPos",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2095": {
+    "name": "fadeOutStart",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2096": {
+    "name": "fadeInStart",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2097": {
+    "name": "resetCamera",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2098": {
+    "name": "setPosXBetweenObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2099": {
+    "name": "setPosYBetweenObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2100": {
+    "name": "pushScreenOffset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2101": {
+    "name": "resetPushScreenOffset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2102": {
+    "name": "stopAnimeLoop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2103": {
+    "name": "enableMatchWinSecondAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2104": {
+    "name": "endMatchWinSecondAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2105": {
+    "name": "setMatchWinFadeOutTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2106": {
+    "name": "stopCameraAnime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2107": {
+    "name": "lockScreenPosition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2108": {
+    "name": "changeMouth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2109": {
+    "name": "bgmRequest",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2110": {
+    "name": "changeMainBGM",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2111": {
+    "name": "sceneAddColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2112": {
+    "name": "sceneMulColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2113": {
+    "name": "sceneLightColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2114": {
+    "name": "sceneAmbientColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2115": {
+    "name": "diffusionFilterToSaturation",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2116": {
+    "name": "haiku",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2117": {
+    "name": "haikuEnd",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2118": {
+    "name": "changeSoundMode",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2119": {
+    "name": "diffusionFilterToForce",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2120": {
+    "name": "finishCameraInit",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2121": {
+    "name": "finishCameraRequest",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2122": {
+    "name": "enableUpdateSceneTexture",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2123": {
+    "name": "resetSceneColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2124": {
+    "name": "glareDisp",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2125": {
+    "name": "glareColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2126": {
+    "name": "resetGlareColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2127": {
+    "name": "glareAlpha",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2128": {
+    "name": "glareAlphaTo",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2129": {
+    "name": "glareSize",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2130": {
+    "name": "glarePos",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2131": {
+    "name": "blurStart",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2132": {
+    "name": "blurEnd",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2133": {
+    "name": "contrastEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2134": {
+    "name": "updateOrthoBlend",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2135": {
+    "name": "addWindPower",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2136": {
+    "name": "addWindPowerOffset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2137": {
+    "name": "pauseCamera",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2138": {
+    "name": "eventMessage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2139": {
+    "name": "eventSetAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2140": {
+    "name": "eventEndSignal",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2141": {
+    "name": "createExChara",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2142": {
+    "name": "eventMovie",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2143": {
+    "name": "eventFadeOut",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2144": {
+    "name": "eventFadeIn",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2145": {
+    "name": "eventDispString",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2146": {
+    "name": "eventFillScreen",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2147": {
+    "name": "eventBGMVolume",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2148": {
+    "name": "eventOrthoBlend",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2149": {
+    "name": "eventMessageDelay",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2150": {
+    "name": "eventLastMonitor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2151": {
+    "name": "eventDramaMatParam",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2152": {
+    "name": "eventBgmRequest",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2153": {
+    "name": "eventControlObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2154": {
+    "name": "eventLoadFileWait",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2155": {
+    "name": "eventLoadFile",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2156": {
+    "name": "eventStopLip",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2157": {
+    "name": "linkCommonPawnEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2158": {
+    "name": "materialSetOnPlayAnimation",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2159": {
+    "name": "modifyBurstGauge",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2160": {
+    "name": "johnnyTreasureEff",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2161": {
+    "name": "destroyGauge",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2162": {
+    "name": "modifyBurstGaugeScaled",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2163": {
+    "name": "resultWinPosition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2164": {
+    "name": "burstOverdriveUIEff",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2165": {
+    "name": "burstShake",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2166": {
+    "name": "getCamera",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2167": {
+    "name": "setSaturation",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2168": {
+    "name": "landingAutoEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2169": {
+    "name": "landingAutoAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2170": {
+    "name": "landingAutoSpeedReset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2171": {
+    "name": "enableFarSlash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2172": {
+    "name": "autoInputDirectionSearch",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2173": {
+    "name": "attackEndDelay",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2174": {
+    "name": "clearInertia",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2175": {
+    "name": "floorEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2176": {
+    "name": "crashSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2177": {
+    "name": "shoesSfx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2178": {
+    "name": "shoesSfxEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2180": {
+    "name": "resetOtherSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2181": {
+    "name": "ignoreSpeedTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2182": {
+    "name": "ignoreSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2183": {
+    "name": "invulnForAegisField",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2184": {
+    "name": "setStrikeInvulnerable",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2185": {
+    "name": "setThrowInvulnerable",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2186": {
+    "name": "throwInvulnerableForTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2187": {
+    "name": "strikeInvulnerableForTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2188": {
+    "name": "invulnForce",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2189": {
+    "name": "zLine",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2190": {
+    "name": "addTension",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2191": {
+    "name": "maxHit",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2192": {
+    "name": "nandemoCancelTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2193": {
+    "name": "exPointFReset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2194": {
+    "name": "exPointFRandAdd",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2195": {
+    "name": "exPointFAdd",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2196": {
+    "name": "exPointFResetObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2197": {
+    "name": "animNameExchange",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2198": {
+    "name": "animNameExchangeClear",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2200": {
+    "name": "randomAdd",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2201": {
+    "name": "randomAddDirection",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2202": {
+    "name": "setRandom",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2203": {
+    "name": "autoAirTurn",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2204": {
+    "name": "landingAutoKeepInertia",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2205": {
+    "name": "venomBall",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2206": {
+    "name": "venomBallFlag",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2207": {
+    "name": "setSpeedByCPCRaw",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2208": {
+    "name": "requestDestroy",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2209": {
+    "name": "destroyAssari",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2210": {
+    "name": "initializeDestroy",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2211": {
+    "name": "numberOfHits",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2212": {
+    "name": "destroyOnEnemyDamage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2213": {
+    "name": "destroyOnEnemyGuard",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2214": {
+    "name": "destroyOnHit",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2215": {
+    "name": "destroyOnClash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2216": {
+    "name": "destroyOnPlayerStateChange",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2217": {
+    "name": "destroyOnPlayerEnemy",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2218": {
+    "name": "destroyOnPlayerGuard",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2219": {
+    "name": "destroyOnSelfInstantKill",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2220": {
+    "name": "destroyOnEnemyInstantKill",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2221": {
+    "name": "destroyOnDamageCollision",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2222": {
+    "name": "destroyTenmetsuTimer",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2223": {
+    "name": "destroyAiuchi",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2224": {
+    "name": "destroyOnDamageOnly",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2225": {
+    "name": "destroyAssariEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2228": {
+    "name": "hide",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2229": {
+    "name": "velocityXPercentEachFrame",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2230": {
+    "name": "velocityYPercentEachFrame",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2231": {
+    "name": "fadeOut",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2232": {
+    "name": "clearLandingStiffTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2233": {
+    "name": "timeSlow",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2234": {
+    "name": "enableRomanCancelMove",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2235": {
+    "name": "romanCancelEndTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2236": {
+    "name": "romanCancelEndTimeByAttack",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2237": {
+    "name": "romanCancelInit",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2238": {
+    "name": "setHighPriorityObj",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2239": {
+    "name": "slowdownEndOnHit",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2240": {
+    "name": "slowdownProration",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2241": {
+    "name": "addSlowdown",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2242": {
+    "name": "disableWall",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2243": {
+    "name": "jimaku",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2244": {
+    "name": "hideAllButSelf",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2245": {
+    "name": "entryAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2246": {
+    "name": "autoYSpeed66PerByHit",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2247": {
+    "name": "tensionAddByLongHair",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2248": {
+    "name": "hitStopTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2249": {
+    "name": "counterHitUkeru",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2250": {
+    "name": "moveToPosTypeToPosTypeEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2251": {
+    "name": "suikomiRange",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2252": {
+    "name": "suikomi",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2253": {
+    "name": "oilRange",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2254": {
+    "name": "ignoreHiddenByDisplayOnlySelf",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2255": {
+    "name": "groundFrozen",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2256": {
+    "name": "IgnoreGroundFrozenMove",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2257": {
+    "name": "suikomare",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2258": {
+    "name": "suikomareYRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2259": {
+    "name": "suikomareLandRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2260": {
+    "name": "suikomareIsReFloating",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2263": {
+    "name": "damageTransferToPlayer",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2264": {
+    "name": "collisionDisplayTenmetsu",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2265": {
+    "name": "collisionDisplay",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2266": {
+    "name": "onSpriteChange",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2267": {
+    "name": "tempShoesType",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2268": {
+    "name": "checkFloorAttribute",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2269": {
+    "name": "createArgInit",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2270": {
+    "name": "createArgNoAssert",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2271": {
+    "name": "createArgDelayStart",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2272": {
+    "name": "createArgPointLightSide",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2273": {
+    "name": "createArgScale",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2274": {
+    "name": "createArgScaleMult",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2275": {
+    "name": "createArgAngle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2276": {
+    "name": "createArgAnglePlus",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2277": {
+    "name": "createArgDirection",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2278": {
+    "name": "createArgFromSocket",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2279": {
+    "name": "sendValuesToObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2280": {
+    "name": "createArgLightColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2281": {
+    "name": "createArgColor",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2282": {
+    "name": "createArgTransPriority",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2283": {
+    "name": "createArgAngleY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2284": {
+    "name": "createArgScaleX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2285": {
+    "name": "createArgScaleMultX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2286": {
+    "name": "createArgScaleY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2287": {
+    "name": "createArgScaleMultY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2288": {
+    "name": "createArgScaleZ",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2289": {
+    "name": "createArgScaleMultZ",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2290": {
+    "name": "createArgLinkMaterialParticle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2291": {
+    "name": "createArgParticleUnusedMatInstance",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2292": {
+    "name": "noGuardEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2293": {
+    "name": "keepAirDamageActionUpper",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2294": {
+    "name": "addTensionValAtMoveBBS",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2295": {
+    "name": "setHitstop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2298": {
+    "name": "checkInputExDirection",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2299": {
+    "name": "scaleForLink",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2300": {
+    "name": "scaleForLinkX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2301": {
+    "name": "scaleForLinkY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2302": {
+    "name": "scaleForLinkZ",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2303": {
+    "name": "scaleForLinkIndependent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2304": {
+    "name": "translucencyPriorityForMesh",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2305": {
+    "name": "setCmnMaterialParam",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2306": {
+    "name": "spriteDarkArea",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2307": {
+    "name": "spriteDarkAreaW",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2308": {
+    "name": "spriteDarkAreaRange",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2309": {
+    "name": "spriteDarkAreaRange2",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2310": {
+    "name": "uiMessage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2311": {
+    "name": "attackTarget",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2312": {
+    "name": "inertiaAccel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2313": {
+    "name": "wallTouchTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2314": {
+    "name": "ignoreSlowdown",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2315": {
+    "name": "spriteTimeAdd",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2316": {
+    "name": "addThrowInvulnTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2317": {
+    "name": "addStrikeInvulnTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2318": {
+    "name": "forceCameraMove",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2319": {
+    "name": "meshSetNameExchange",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2320": {
+    "name": "meshSetClearNameExchange",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2321": {
+    "name": "spriteByDamage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2322": {
+    "name": "doNotBeginCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2323": {
+    "name": "screenAdditionalWidth",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2324": {
+    "name": "meshSetSpriteTable",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2325": {
+    "name": "groundShake",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2326": {
+    "name": "groundShakeEvent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2327": {
+    "name": "spriteForNotFound",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2328": {
+    "name": "nozekoriEnchou",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2329": {
+    "name": "addTensionBalance",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2330": {
+    "name": "addTensionUnscaled",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2331": {
+    "name": "damageToAir",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2332": {
+    "name": "ribbonVolatileCountIncrementForScript",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2333": {
+    "name": "romanCancelFurimuki",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2334": {
+    "name": "calcDistanceEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2335": {
+    "name": "requestSpecialMoveUI",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2336": {
+    "name": "forcePositiveBonus",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2337": {
+    "name": "spriteByDamageEx",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2338": {
+    "name": "setGameSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2339": {
+    "name": "setMeshChangeCurrent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2341": {
+    "name": "cameraShakeEX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2342": {
+    "name": "momItemLevelSolve",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2343": {
+    "name": "momItemStatusExe",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2344": {
+    "name": "hideByCutscene",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2345": {
+    "name": "jimakuTop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2346": {
+    "name": "addMOMMedal",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2347": {
+    "name": "forcePoison",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2348": {
+    "name": "damageToRedFlash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2349": {
+    "name": "damageToWhiteFlash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2350": {
+    "name": "dontUseSelfAttackCollision",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2351": {
+    "name": "floatTargetForCpu",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2352": {
+    "name": "missionFail",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2353": {
+    "name": "naguriNagurareru",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2354": {
+    "name": "naguriNaguru",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2355": {
+    "name": "missionMissName",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2356": {
+    "name": "disableThrow",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2357": {
+    "name": "missionKeyStart",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2358": {
+    "name": "negativeNoAddByGamenhashi",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2359": {
+    "name": "bufferInputReset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2360": {
+    "name": "checkIfMoveExists",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2361": {
+    "name": "disableCrouch",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2362": {
+    "name": "checkCurrentStateEntryName",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2363": {
+    "name": "dokiDokiStopHassei",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2364": {
+    "name": "dokiDokiStopDamage",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2365": {
+    "name": "checkStateEntryNameCopyFrom",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2366": {
+    "name": "disableGuard",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2367": {
+    "name": "ghost",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2368": {
+    "name": "servantA",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2369": {
+    "name": "servantB",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2370": {
+    "name": "servantC",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2371": {
+    "name": "checkEnemyRangeIn",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2372": {
+    "name": "yogoreru",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2373": {
+    "name": "spriteNoStop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2374": {
+    "name": "zanGuardHunou",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2375": {
+    "name": "activateBackGuard",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2376": {
+    "name": "disableAirThrow",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2377": {
+    "name": "checkLastDamageActionNameAndAirStun",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2378": {
+    "name": "setMatchResultOffset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2379": {
+    "name": "naguruAttackRangeCheck",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2380": {
+    "name": "nextHitActionNAme",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2382": {
+    "name": "missionSealAll",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2383": {
+    "name": "missionSealFDash",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2384": {
+    "name": "missionSealGuard",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2385": {
+    "name": "missionSealCrouch",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2386": {
+    "name": "missionSealJump",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2391": {
+    "name": "missionSealAttack",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2399": {
+    "name": "missionMiss",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2400": {
+    "name": "missionEnemyCpuStop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2401": {
+    "name": "missionForceStandGuard",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2402": {
+    "name": "missionForceCrouchGuard",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2403": {
+    "name": "missionCheckAttackName",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2404": {
+    "name": "nearSlashObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2405": {
+    "name": "hitBackObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2406": {
+    "name": "redRomanCancelObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2407": {
+    "name": "redRomanCancelTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2408": {
+    "name": "guardEffectObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2409": {
+    "name": "objectSortPriority",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2410": {
+    "name": "resetPushbackSpeed",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2411": {
+    "name": "applyHitstopForObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2412": {
+    "name": "missionAdvice",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2413": {
+    "name": "tensionBalanceFix",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2414": {
+    "name": "voiceDoNotDeadVoice",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2415": {
+    "name": "tutorialCameraMode",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2416": {
+    "name": "hitBackDontReset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2417": {
+    "name": "missionPopUp",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2418": {
+    "name": "missionForceJump",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2419": {
+    "name": "sfxSetBeginArg",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2420": {
+    "name": "sfxSetBegin",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2421": {
+    "name": "sfxSetEnd",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2422": {
+    "name": "displayFadeOutStart",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2423": {
+    "name": "displayFadeInStart",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2424": {
+    "name": "effectForZReflectNiku",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2425": {
+    "name": "setDrawFlagBattleHud",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2426": {
+    "name": "setForceDrawPlayerOutIcon",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2427": {
+    "name": "battleStats",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2435": {
+    "name": "ignoreOil",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2436": {
+    "name": "clearHitStopTimeBySousai",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2437": {
+    "name": "superArmorStrikeForAegisField",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2438": {
+    "name": "forceEnableBlueRomanCancel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2439": {
+    "name": "to3BuffDebuffStatus",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2440": {
+    "name": "to3BuffDebuffDispel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2441": {
+    "name": "to3SkillDispel",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2461": {
+    "name": "attatchParticle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2462": {
+    "name": "detatchParticle",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2463": {
+    "name": "selfLinkBone",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2464": {
+    "name": "resetSelfLinkBone",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2465": {
+    "name": "linkBPEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2466": {
+    "name": "BPEffectParam",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2469": {
+    "name": "jumpCancelBufferInputTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2470": {
+    "name": "addInGameCashReserveByBBS",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2471": {
+    "name": "miss",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2472": {
+    "name": "good",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2474": {
+    "name": "initializeForTagEnterActionBase",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2475": {
+    "name": "initializeForTagEnterAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2476": {
+    "name": "initializeForTagAttackAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2477": {
+    "name": "initializeForAttackAttackAction",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2478": {
+    "name": "requestTagMember",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2479": {
+    "name": "setCooldownTime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2480": {
+    "name": "forceEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2481": {
+    "name": "forceEffectMove",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2482": {
+    "name": "forceEffectRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2483": {
+    "name": "requestAssist",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2484": {
+    "name": "requestAssistUltimate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2485": {
+    "name": "initializeVanish",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2486": {
+    "name": "skillFinishToDownLoop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2487": {
+    "name": "bodyChange",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2488": {
+    "name": "operationCopyValueFromParent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2489": {
+    "name": "operationCopyValueFromPlayer",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2490": {
+    "name": "moveCameraLinear",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2491": {
+    "name": "requestAssistCutIn",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2492": {
+    "name": "setDisplayPlayerOutIcon",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2493": {
+    "name": "linkModelSelfTeam",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2494": {
+    "name": "linkModelEnemyTeam",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2495": {
+    "name": "linkPawnTeamMember",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2496": {
+    "name": "entrySubMemberPosition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2497": {
+    "name": "displaySubMemberforEntry",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2498": {
+    "name": "ifTrueInObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2499": {
+    "name": "ifNotInObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2500": {
+    "name": "ifOperationInObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2501": {
+    "name": "deadAndCalm",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2502": {
+    "name": "roundStartBgTransition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2503": {
+    "name": "dramaticSetBegin",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2504": {
+    "name": "dramaticSetEnd",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2505": {
+    "name": "dramaticActionSelf",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2506": {
+    "name": "dramaticActionEnemy",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2507": {
+    "name": "dramaticActionRoundStart",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2508": {
+    "name": "dramaticCondition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2509": {
+    "name": "dramaticSetClear",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2510": {
+    "name": "dispDramaticFinish",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2511": {
+    "name": "startHudTutorial",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2512": {
+    "name": "initCharaNameFromCharaID",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2513": {
+    "name": "ifCharaID",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2514": {
+    "name": "initCharaNameForVoice",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2515": {
+    "name": "setVoiceCharaNameFromCharaID",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2516": {
+    "name": "setOverdriveMoveOffset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2517": {
+    "name": "requestOverdriveBattleLive",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2518": {
+    "name": "playAnimFaceIndex",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2519": {
+    "name": "ignoreHideAllButSelf",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2520": {
+    "name": "zLineNearScale",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2521": {
+    "name": "zLineNearMultiplierReset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2522": {
+    "name": "boneControlIgnoreObjectStop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2523": {
+    "name": "bonePosition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2524": {
+    "name": "boneRotation",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2525": {
+    "name": "ignoreZLine",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2526": {
+    "name": "spriteSlowParam",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2527": {
+    "name": "spriteSlowDefaultParam",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2528": {
+    "name": "moveCameraStart",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2529": {
+    "name": "moveCameraBasePosObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2530": {
+    "name": "moveCameraTargetPosObject",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2531": {
+    "name": "moveCameraPosX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2532": {
+    "name": "moveCameraPosY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2533": {
+    "name": "moveCameraPosZ",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2534": {
+    "name": "moveCameraRotPitch",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2535": {
+    "name": "moveCameraRotYaw",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2536": {
+    "name": "moveCameraRotRoll",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2537": {
+    "name": "moveCameraBasePosOffsetX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2538": {
+    "name": "moveCameraBasePosOffsetY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2539": {
+    "name": "moveCameraBasePosOffsetZ",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2540": {
+    "name": "moveCameraTargetPosOffsetX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2541": {
+    "name": "moveCameraTargetPosOffsetY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2542": {
+    "name": "moveCameraTargetPosOffsetZ",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2543": {
+    "name": "moveCameraTargetDistance",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2544": {
+    "name": "moveCameraTargetPercent",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2545": {
+    "name": "moveCameraFOV",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2546": {
+    "name": "moveCameraTargetRotRatePitch",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2547": {
+    "name": "moveCameraTargetRotRateYaw",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2548": {
+    "name": "moveCameraTargetRotRateRoll",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2549": {
+    "name": "moveCameraPos",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2550": {
+    "name": "moveCameraRot",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2551": {
+    "name": "moveCameraBasePosOffset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2552": {
+    "name": "moveCameraTargetPosOffset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2553": {
+    "name": "moveCameraTargetRotRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2554": {
+    "name": "moveCameraReset",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2555": {
+    "name": "moveCameraTargetPosRateX",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2556": {
+    "name": "moveCameraTargetPosRateY",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2557": {
+    "name": "moveCameraTargetPosRateZ",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2558": {
+    "name": "moveCameraTargetPosRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2559": {
+    "name": "boneScale",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2560": {
+    "name": "cinesco",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2561": {
+    "name": "moveCameraTargetCameraOn",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2562": {
+    "name": "moveCameraTargetCameraOff",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2563": {
+    "name": "moveCameraTargetCameraOnBlend",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2564": {
+    "name": "moveCameraTargetCameraOffBlend",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2565": {
+    "name": "moveCameraStop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2566": {
+    "name": "moveCameraTargetRotRoll",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2567": {
+    "name": "moveCameraAnime",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2568": {
+    "name": "moveCameraAnimePosRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2569": {
+    "name": "moveCameraAnimeRotRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2570": {
+    "name": "moveCameraAnimeFOVRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2571": {
+    "name": "centerScreenPosition",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2572": {
+    "name": "moveCameraSpline",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2573": {
+    "name": "moveCameraSplinePosRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2574": {
+    "name": "moveCameraTrackUp",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2575": {
+    "name": "moveCameraOrthoCurve",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2576": {
+    "name": "materialValDefault",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2577": {
+    "name": "pauseCommonMaterialParam",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2578": {
+    "name": "materialValResetOnActionChange",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2579": {
+    "name": "setStatusIcon",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2580": {
+    "name": "displayWithoutMove",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2581": {
+    "name": "overwriteLinkBone",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2582": {
+    "name": "resetOverwriteLinkBone",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2583": {
+    "name": "lockMesh",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2584": {
+    "name": "unlockMesh",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2585": {
+    "name": "attachPawn",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2586": {
+    "name": "detatchPawnFromSocket",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2587": {
+    "name": "particleSlowdown",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2588": {
+    "name": "colorAreaBlend",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2589": {
+    "name": "postProcessEffect",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2590": {
+    "name": "sceneLightDir",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2591": {
+    "name": "spriteSlowParamFinishStop",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2592": {
+    "name": "cameraLightDirectionBlend",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2593": {
+    "name": "slowMoveRate",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2594": {
+    "name": "statsSkillCheck",
+    "desc": "DESCRIPTION MISSING"
+  },
+  "2595": {
+    "name": "statsActionName",
+    "desc": "DESCRIPTION MISSING"
+  }
+}

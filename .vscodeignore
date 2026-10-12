@@ -1,0 +1,54 @@
+# Source-control and repository metadata
+.git/**
+.github/**
+.gitattributes
+.gitignore
+
+# Development-only Visual Studio Code files
+.vscode/launch.json
+# Keep .vscode/settings.json because the extension uses it as the default
+# project settings template.
+
+# Rust source and build output are not needed in the installed VSIX.
+# The compiled runtime helper is shipped from bin/win32-x64/.
+helper/**
+
+# Development and maintenance scripts are not needed at runtime
+tools/**
+
+# Test, coverage, and cache output
+test/**
+tests/**
+coverage/**
+.nyc_output/**
+node_modules/.cache/**
+
+# Native debug and compiler artifacts
+**/*.pdb
+**/*.ilk
+**/*.obj
+**/*.exp
+
+# Logs and temporary files
+**/*.log
+**/*.tmp
+**/*.temp
+**/*.bak
+**/*.old
+**/*~
+
+# Previously packaged extensions and archives
+*.vsix
+*.zip
+*.7z
+*.rar
+
+# Public-repository documentation not needed by the installed extension
+CONTRIBUTING.md
+SECURITY.md
+THIRD_PARTY_NOTICES.md
+
+# Operating-system metadata
+**/.DS_Store
+**/Thumbs.db
+**/desktop.ini
